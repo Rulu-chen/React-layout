@@ -169,6 +169,14 @@ body {
         .nav-item .dropdown-webbar {
           text-decoration: none;
         }
+
+        .nav-item .dropdown-menu.login-border {
+          @media (max-width: 992px) {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+        }
+
         .nav-item .dropdown-menu {
           @media (max-width: 992px) {
             position: initial;
@@ -188,6 +196,8 @@ body {
           --bs-dropdown-link-active-bg: none;
           padding-top: 6px;
           padding-bottom: 0px;
+
+
 
           li:not(:last-child) {
             @media (max-width: 992px) {
@@ -247,6 +257,25 @@ body {
 
         .nav-min-types .nav-item {
           border-top: 1px dotted $primary;
+        }
+        .nav-link .my-drop-items{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .faangle{
+            font-size: 25px;
+          }
+          .faangleup{
+            display: none;
+          }
+        }
+        .nav-link.show .my-drop-items{
+          .faangleup{
+            display: initial;
+          }
+          .faangledown{
+            display: none;
+          }
         }
 
         //網頁版調整

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { FaBars, FaUser, FaShoppingCart } from 'react-icons/fa'
+import { FaBars, FaUser, FaShoppingCart, FaAngleDown,FaAngleUp  } from 'react-icons/fa'
 
 export default function Night2() {
   return (
@@ -38,9 +38,7 @@ export default function Night2() {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    {/* <i className="navbar-toggler-icon fa-solid fa-bars" /> */}
                     <FaBars className="navbar-toggler-icon fa-solid fa-bars" />
-                    {/* <span class="navbar-toggler-icon"></span> */}
                   </button>
                 </div>
               </div>
@@ -83,7 +81,11 @@ export default function Night2() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        註冊
+                        <div className="my-drop-items">
+                          <span>註冊</span>
+                          <FaAngleDown className="faangle faangledown" />
+                          <FaAngleUp className="faangle faangleup" />
+                        </div>
                       </a>
                       <ul
                         className="dropdown-menu"
@@ -110,10 +112,14 @@ export default function Night2() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        登入
+                        <div className="my-drop-items">
+                          <span>登入</span>
+                          <FaAngleDown className="faangle faangledown" />
+                          <FaAngleUp className="faangle faangleup" />
+                        </div>
                       </a>
                       <ul
-                        className="dropdown-menu"
+                        className="dropdown-menu login-border"
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
@@ -130,7 +136,7 @@ export default function Night2() {
                     </li>
                     {/* 未登入版結束 */}
                     {/* 一般會員版 開始*/}
-                    <li className="nav-item dropdown">
+                    {/* <li className="nav-item dropdown">
                       <a
                         className="nav-link"
                         href="#"
@@ -139,7 +145,11 @@ export default function Night2() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        一般會員中心
+                        <div className="my-drop-items">
+                          <span>一般會員中心</span>
+                          <FaAngleDown className="faangle faangledown" />
+                          <FaAngleUp className="faangle faangleup" />
+                        </div>
                       </a>
                       <ul
                         className="dropdown-menu"
@@ -161,10 +171,10 @@ export default function Night2() {
                       <a className="nav-link" href="#">
                         登出
                       </a>
-                    </li>
+                    </li> */}
                     {/* 一般會員結束 */}
                     {/* 商家會員版 開始*/}
-                    <li className="nav-item dropdown">
+                    {/* <li className="nav-item dropdown">
                       <a
                         className="nav-link"
                         href="#"
@@ -173,14 +183,18 @@ export default function Night2() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        商家會員中心
+                        <div className="my-drop-items">
+                          <span>商家會員中心</span>
+                          <FaAngleDown className="faangle faangledown" />
+                          <FaAngleUp className="faangle faangleup" />
+                        </div>
                       </a>
                       <ul
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <a className="dropdown-item" href="./index">
                             掃描QRcode
                           </a>
                         </li>
@@ -200,7 +214,7 @@ export default function Night2() {
                       <a className="nav-link" href="#">
                         登出
                       </a>
-                    </li>
+                    </li> */}
                     {/* 商家會員結束 */}
                   </div>
                   {/* 手機版的選單 結束 */}
