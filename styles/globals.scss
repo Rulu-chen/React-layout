@@ -153,6 +153,9 @@ body {
 
         //  網頁版下拉選單部分
         .triangle {
+          @media (max-width: 992px) {
+            display: none;
+          }
           position: absolute;
           border-color: transparent transparent #fff transparent;
           border-style: solid solid solid solid;
@@ -167,6 +170,13 @@ body {
           text-decoration: none;
         }
         .nav-item .dropdown-menu {
+          @media (max-width: 992px) {
+            position: initial;
+            width: initial;
+            padding: 0;
+            background-color: rgba(255, 255, 255,50%);
+            border-radius: 0px;
+          }
           // 定位
           top: 60px;
           left: -110px;
@@ -180,9 +190,18 @@ body {
           padding-bottom: 0px;
 
           li:not(:last-child) {
+            @media (max-width: 992px) {
+              border: none;
+            }
             border-bottom: 2px dotted $gray;
           }
           .dropdown-item {
+            @media (max-width: 992px) {
+              padding: 8px 20px;
+              font-weight: 500;
+              justify-content: start;
+              border-top: 1px dotted $primary;
+            }
             color: $primary;
             text-align: center;
             font-size: 16px;
