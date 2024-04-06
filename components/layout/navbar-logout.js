@@ -8,7 +8,7 @@ import {
   FaAngleUp,
 } from 'react-icons/fa'
 
-export default function Navbar() {
+export default function NavbarLogout() {
   return (
     <>
       {' '}
@@ -121,87 +121,6 @@ export default function Navbar() {
                   </ul>
                 </li>
                 {/* 未登入版結束 */}
-                {/* 一般會員版 開始*/}
-                {/* <li className="nav-item dropdown">
-            <a
-              className="nav-link"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div className="my-drop-items">
-                <span>一般會員中心</span>
-                <FaAngleDown className="faangle faangledown" />
-                <FaAngleUp className="faangle faangleup" />
-              </div>
-            </a>
-            <ul
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdown"
-            >
-              <li>
-                <a className="dropdown-item" href="#">
-                  商品與QRcode
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  編輯基本資料
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              登出
-            </a>
-          </li> */}
-                {/* 一般會員結束 */}
-                {/* 商家會員版 開始*/}
-                {/* <li className="nav-item dropdown">
-            <a
-              className="nav-link"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div className="my-drop-items">
-                <span>商家會員中心</span>
-                <FaAngleDown className="faangle faangledown" />
-                <FaAngleUp className="faangle faangleup" />
-              </div>
-            </a>
-            <ul
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdown"
-            >
-              <li>
-                <a className="dropdown-item" href="./index">
-                  掃描QRcode
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  進入店面
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  訂單管理
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              登出
-            </a>
-          </li> */}
-                {/* 商家會員結束 */}
               </div>
               {/* 手機版的選單 結束 */}
 
@@ -240,58 +159,6 @@ export default function Navbar() {
                       </ul>
                     </div>
                     {/* 未登入 End */}
-                    {/* 一般會員 Start */}
-                    {/*<div className="dropdown">
-                <a
-                  className="dropdown-webbar"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <FaBars className="fa-solid fa-bars" />
-                  <FaUser className="fa-solid fa-user" />
-                </a>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="dropdownMenuLink"
-                >
-                  <div className="triangle"></div>
-
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      編輯基本資料
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      商品與QRcode
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      登出
-                    </a>
-                  </li>
-                </ul>
-              </div>*/}
-                    {/* 一般會員 End */}
-                    {/* 商家會員 Start */}
-                    {/* <div className="dropdown">
-          <a className="dropdown-webbar" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            <FaBars className="fa-solid fa-bars" />
-            <FaUser className="fa-solid fa-user" />
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <div className="triangle"></div>
-            <li><a className="dropdown-item" href="#">進入店面</a></li>
-            <li><a className="dropdown-item" href="#">訂單管理</a></li>
-            <li><a className="dropdown-item" href="#">掃描QRcode</a></li>
-            <li><a className="dropdown-item" href="#">登出</a></li>
-          </ul>
-        </div> */}
-                    {/* 商家會員 End */}
                   </div>
                 </li>
                 <li className="nav-item">

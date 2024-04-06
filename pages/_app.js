@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import '@/styles/globals.scss'
 import DefaultLayout from '@/components/layout/default-layout'
+import MainLayout from '@/components/layout/main-layout'
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
