@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
   // 使用預設排版檔案
   // 對應`components/layout/default-layout/index.js`
   const getLayout =
-    Component.getLayout || ((page) => <DefaultLayout>{page}</DefaultLayout>)
+    Component.getLayout || ((page) => <MainLayout>{page}</MainLayout>)
 
   return getLayout(<Component {...pageProps} />)
 }

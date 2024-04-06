@@ -138,7 +138,7 @@ export default function NavbarLogout() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        <FaBars className="fa-solid fa-bars" />
+                        {/* <FaBars className="fa-solid fa-bars" /> */}
                         <FaUser className="fa-solid fa-user" />
                       </a>
                       <ul

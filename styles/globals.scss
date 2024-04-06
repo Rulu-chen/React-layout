@@ -324,9 +324,18 @@ body {
           justify-content: center;
         }
 
+        .dropdown-webbar:hover,.dropdown-webbar.show {
+          .fa-bars {
+            color: $light-primary;
+          }
+          .fa-user {
+            background-color: $light-primary;
+            border: 1px solid $light-primary;
+          }
+        }
         .nav-icons .fa-bars {
           color: $secondary;
-          font-size: 30px;
+          font-size: 25px;
           margin-right: 10px;
         }
         .nav-icons .fa-user {
