@@ -1,0 +1,30 @@
+$black: #070505;
+$primary: rgb(163, 44, 45);
+$secondary: rgb(225, 209, 178);
+$success: rgb(41, 162, 30);
+$warning: rgb(255, 201, 64);
+$danger: rgb(255, 1, 1);
+$light-primary: rgb(234, 105, 106);
+$deep-primary: rgb(98, 27, 27);
+$deep-gray: rgb(183, 180, 177);
+$gray: rgb(229, 225, 221);
+
+@import '~bootstrap/scss/bootstrap';
+
+.section-index {
+  position: relative;
+  .index-title {
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    color: $secondary;
+    padding: 15px 0px;
+    width: 200px;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+  }
+}

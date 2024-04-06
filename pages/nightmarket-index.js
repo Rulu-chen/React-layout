@@ -2,8 +2,6 @@ import Section from '@/components/layout/section'
 import React from 'react'
 import Image from 'next/image'
 
-
-
 export default function SectionIndex() {
   return (
     <>
@@ -22,10 +20,21 @@ export default function SectionIndex() {
       </div>
       <div className="kv" />
       <div className="section-index">
+        <div className="index-title">最新消息</div>
         <h1>aaaaa</h1>
       </div>
-      <div className="section-index" />
+      <div className="section-index">
+        <div className="index-title">店家</div>
+        <h1>aaaaa</h1>
+      </div>
+      <div className="section-index">
+        <div className="index-title">商品</div>
+        <h1>aaaaa</h1>
+      </div>
+      <div className="section-index">
+        <div className="index-title">關於我們</div>
+        <h1>aaaaa</h1>
+      </div>
     </>
   )
 }
-
