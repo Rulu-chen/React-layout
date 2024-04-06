@@ -1,16 +1,6 @@
 // 檔案位置: styles/global.scss
 // 變數覆蓋用 (Variable overrides)
 // // 全站配色 colors
-// $primary: #894505;
-// $secondary: rgba(44, 226, 31, 0.5);
-// $success: #7eb4e6;
-// $danger: #ff4136;
-
-// // 按鈕圓角邊 button radius
-// $border-radius: 0em;
-// $border-radius-sm: 0.2em;
-// $border-radius-lg: 0.2em;
-
 $black: #070505;
 $primary: rgb(163, 44, 45);
 $secondary: rgb(225, 209, 178);
@@ -45,6 +35,7 @@ body {
       border-radius: 0px;
       padding-left: 10px;
       padding-right: 10px;
+      padding-bottom: 0px;
       border-radius: 0px;
     }
     // height: 200vh;
@@ -182,7 +173,7 @@ body {
             position: initial;
             width: initial;
             padding: 0;
-            background-color: rgba(255, 255, 255,50%);
+            background-color: rgba(255, 255, 255, 50%);
             border-radius: 0px;
           }
           // 定位
@@ -196,8 +187,6 @@ body {
           --bs-dropdown-link-active-bg: none;
           padding-top: 6px;
           padding-bottom: 0px;
-
-
 
           li:not(:last-child) {
             @media (max-width: 992px) {
@@ -258,22 +247,22 @@ body {
         .nav-min-types .nav-item {
           border-top: 1px dotted $primary;
         }
-        .nav-link .my-drop-items{
+        .nav-link .my-drop-items {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .faangle{
+          .faangle {
             font-size: 25px;
           }
-          .faangleup{
+          .faangleup {
             display: none;
           }
         }
-        .nav-link.show .my-drop-items{
-          .faangleup{
+        .nav-link.show .my-drop-items {
+          .faangleup {
             display: initial;
           }
-          .faangledown{
+          .faangledown {
             display: none;
           }
         }
@@ -434,7 +423,7 @@ body {
         border: $primary solid 20px;
         padding: 80px 80px 150px 80px;
       }
-      .section {
+      .section-index{
         @media (max-width: 992px) {
           border: $primary solid 10px;
           border-radius: 30px 30px 0px 0px;
@@ -457,11 +446,45 @@ body {
         border: $primary solid 20px;
         flex-direction: column;
       }
+      .section {
+        @media (max-width: 992px) {
+          border: $primary solid 10px;
+          border-top:none;
+          border-radius: 30px 30px 0px 0px;
+          padding: 20px 20px 60px 20px;
+        }
+        display: flex;
+        height: 100vh;
+        padding: 80px 80px 150px 80px;
+        align-self: stretch;
+        position: relative;
+        background: $secondary;
+        background: linear-gradient(
+            0deg,
+            rgba(225, 209, 178, 0.8) 0%,
+            rgba(225, 209, 178, 0.8) 100%
+          ),
+          url(../public/images/layout/bgc.jpg), lightgray 50%;
+        // margin-top: -40px;
+        border-radius: 70px 70px 0px 0px;
+        border: $primary solid 20px;
+        border-top:none;
+        flex-direction: column;
+      }
     }
 
+    // footer設定
+    footer.row {
+      @media (max-width: 992px) {
+        padding: 0;
+        margin: 0;
+      }
+    }
     footer {
       position: relative;
-      height: 50vh;
+      // height: 50vh;
+      align-self: stretch;
+      z-index: 0;
       @media (max-width: 992px) {
         // border 手機版有奇怪的破圖才設的 或許可拿掉
         border-right: 12px solid $primary;
@@ -469,31 +492,164 @@ body {
         border-bottom: 12px solid $primary;
         padding: 15px;
       }
-      .circle {
-        @media (max-width: 992px) {
-          padding: 80px;
-          border-radius: 100px;
-          top: -30px;
+      // footer 的圓頂設定
+      .footer-circle {
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+        .circle {
+          @media (max-width: 992px) {
+            padding: 80px;
+            border-radius: 100px;
+            top: -30px;
+          }
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 200px;
+          background-color: $primary;
+          border-radius: 200px;
+          top: -80px;
+          z-index: 0;
         }
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 200px;
-        background-color: $primary;
-        border-radius: 200px;
-        top: -80px;
       }
-      // position: relative;
-      // // padding: 75px 0 44px;
-      // margin-top: -50px;
-      // margin-left: 0px;
-      // margin-left: 0px;
-      // background-image: url(../public/images/layout/footer.png);
-      // background-position: top center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
-      // border-left: 10px solid $primary;
-      // border-right: 10px solid $primary;
+
+      .footer-bar {
+        @media (max-width: 992px) {
+          padding: 10px 0px;
+        }
+        color: #fff;
+        z-index: 1;
+        padding: 80px 80px 0px 80px;
+
+        // 導覽連結的設定
+        .footer-top {
+          @media (max-width: 992px) {
+            padding-top: 60px;
+          }
+          width: 100%;
+          justify-content: space-between;
+          align-items: flex-start;
+          .left-footer,
+          .right-footer {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            .footer-link {
+              @media (max-width: 992px) {
+                align-self: stretch;
+                font-size: 16px;
+              }
+              font-size: 22px;
+              font-weight: 500;
+              color: #fff;
+              text-decoration: none;
+            }
+            :hover {
+              color: $light-primary;
+            }
+          }
+          .left-footer {
+            @media (max-width: 992px) {
+              padding-left: 30px;
+              gap:10px;
+            }
+            justify-content: start;
+            .footer-item {
+              @media (max-width: 992px) {
+                padding: 0;
+              }
+              padding-right: 40px;
+            }
+            :not(:first-child) {
+              @media (max-width: 992px) {
+                padding: 0;
+              }
+              padding-left: 40px;
+            }
+            :not(:last-child) {
+              border-right: 1px solid #fff;
+              @media (max-width: 992px) {
+                border: none;
+              }
+            }
+        }
+          .right-footer {
+            @media (max-width: 992px) {
+              padding-right: 30px;
+              text-align: end;
+              gap:10px;
+            }
+            justify-content: end;
+            .footer-item {
+              @media (max-width: 992px) {
+                padding: 0;
+              }
+              padding-left: 40px;
+            }
+            :not(:last-child) {
+              @media (max-width: 992px) {
+                padding: 0;
+              }
+              padding-right: 50px;
+            }
+            :not(:last-child) {
+              border-right: 1px solid #fff;
+              @media (max-width: 992px) {
+                border: none;
+              }
+            }
+          }
+        }
+        // 下半部加 icon
+        .center-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .icon-pic {
+            @media (max-width: 992px) {
+              top: -10px;
+            }
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -30px;
+            .web-icon {
+              @media (max-width: 992px) {
+                width: 70px;
+                height: 70px;
+              }
+            }
+          }
+          .web-info {
+            @media (max-width: 992px) {
+            padding-top: 50px;
+            font-size: 12px;
+            gap:3px;
+            }
+            padding-top: 180px;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            .tel-item:not(:last-child) {
+              padding-right: 20px;
+            }
+            .copy {
+              @media (max-width: 992px) {
+                margin-top: 20px;
+                font-size: 10px;
+              }
+              margin-top: 60px;
+              font-size: 12px;
+              color: $light-primary;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,7 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { FaBars, FaUser, FaShoppingCart, FaAngleDown,FaAngleUp  } from 'react-icons/fa'
+import {
+  FaBars,
+  FaUser,
+  FaShoppingCart,
+  FaAngleDown,
+  FaAngleUp,
+} from 'react-icons/fa'
 
 export default function Night2() {
   return (
@@ -18,12 +24,7 @@ export default function Night2() {
             <div className="container-fluid">
               <div className="inline-nav">
                 <a className="navbar-brand" href="#">
-                  <Image
-                    src="/docs/5.1/assets/brand/bootstrap-logo.svg"
-                    alt=""
-                    width={30}
-                    height={24}
-                  />
+                  <Image src="/activity.svg" alt="" width={30} height={24} />
                 </a>
                 <div className="right-icons">
                   <a className="navbar-brand min-cart" href="#">
@@ -255,9 +256,9 @@ export default function Night2() {
                         </div>
                         {/* 未登入 End */}
                         {/* 一般會員 Start */}
-                        {/*<div class="dropdown">
+                        {/*<div className="dropdown">
                           <a
-                            class="dropdown-webbar"
+                            className="dropdown-webbar"
                             href="#"
                             role="button"
                             id="dropdownMenuLink"
@@ -268,23 +269,23 @@ export default function Night2() {
                             <FaUser className="fa-solid fa-user" />
                           </a>
                           <ul
-                            class="dropdown-menu"
+                            className="dropdown-menu"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <div class="triangle"></div>
+                            <div className="triangle"></div>
 
                             <li>
-                              <a class="dropdown-item" href="#">
+                              <a className="dropdown-item" href="#">
                                 編輯基本資料
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="#">
+                              <a className="dropdown-item" href="#">
                                 商品與QRcode
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="#">
+                              <a className="dropdown-item" href="#">
                                 登出
                               </a>
                             </li>
@@ -292,17 +293,17 @@ export default function Night2() {
                         </div>*/}
                         {/* 一般會員 End */}
                         {/* 商家會員 Start */}
-                        {/* <div class="dropdown">
-                    <a class="dropdown-webbar" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        {/* <div className="dropdown">
+                    <a className="dropdown-webbar" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       <FaBars className="fa-solid fa-bars" />
                       <FaUser className="fa-solid fa-user" />
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <div class="triangle"></div>
-                      <li><a class="dropdown-item" href="#">進入店面</a></li>
-                      <li><a class="dropdown-item" href="#">訂單管理</a></li>
-                      <li><a class="dropdown-item" href="#">掃描QRcode</a></li>
-                      <li><a class="dropdown-item" href="#">登出</a></li>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <div className="triangle"></div>
+                      <li><a className="dropdown-item" href="#">進入店面</a></li>
+                      <li><a className="dropdown-item" href="#">訂單管理</a></li>
+                      <li><a className="dropdown-item" href="#">掃描QRcode</a></li>
+                      <li><a className="dropdown-item" href="#">登出</a></li>
                     </ul>
                   </div> */}
                         {/* 商家會員 End */}
@@ -336,17 +337,78 @@ export default function Night2() {
             </div>
           </div>
           <div className="kv" />
-          <div className="section">
+          <div className="section-index">
             <h1>aaaaa</h1>
           </div>
-          <div className="section" />
+          <div className="section-index" />
         </main>
         <footer className="row">
-          <div className="footer">
+          <div className="footer-circle">
             <div className="circle"></div>
-            fffffff
           </div>
-          <h1>GFGFFH</h1>
+          <div className="footer-bar d-flex flex-column">
+            <div className="footer-top d-flex  flex-md-row">
+              <ul className="left-footer col-6 d-flex flex-column flex-md-row">
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    夜市導覽
+                  </a>
+                </li>
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    美味商城
+                  </a>
+                </li>
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    趣味遊戲
+                  </a>
+                </li>
+              </ul>
+              <ul className="right-footer col-6 d-flex flex-column flex-md-row">
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    最新消息
+                  </a>
+                </li>
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    成為店家
+                  </a>
+                </li>
+                <li className="footer-item">
+                  <a className="footer-link" href="#">
+                    聯絡我們
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="center-text d-flex ">
+              <div className="icon-pic">
+                {' '}
+                <Image
+                  src="/images/layout/icons.png"
+                  alt="web-icon"
+                  className="web-icon"
+                  width={250}
+                  height={250}
+                />
+              </div>
+              <div className="web-info">
+                <div className="tel">
+                  <span className="tel-item col-6">電話 . 0911222333</span>
+                  <span className="tel-item col-6">傳真 . 0911222333</span>
+                </div>
+                <span className="col-12">信箱 . nightmarket@gmail.com</span>
+                <span className="col-12">
+                  地址 . 新北市中和區某某路100號10樓
+                </span>
+                <span className="copy col-12">
+                  Copyright © 2024 Nightmarket Hunter All Rights Reserved.
+                </span>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </>
