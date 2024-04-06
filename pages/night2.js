@@ -325,15 +325,15 @@ export default function Night2() {
         </header>
         <main className="row">
           <div className="simple-news">
-            <div className="col-1">
+            <div className="col-2 col-md-1">
               <h6>即時消息</h6>
             </div>
-            <div className="col-11 news">
-              <p>即時消息即時消息即時消息即時消息即時消息即時消息</p>
-              <p>即時消息即時消息即時消息即時消息即時消息即時消息</p>
-              <p>即時消息即時消息即時消息即時消息即時消息即時消息</p>
-              <p>即時消息即時消息即時消息即時消息即時消息即時消息</p>
-              <p>即時消息即時消息即時消息即時消息即時消息即時消息</p>
+            <div className="col-10 col-md-11 news">
+              <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
+              <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
+              <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
+              <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
+              <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
             </div>
           </div>
           <div className="kv" />
