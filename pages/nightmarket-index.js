@@ -1,6 +1,7 @@
-import Section from '@/components/layout/section'
 import React from 'react'
 import Image from 'next/image'
+import { FaSistrix } from 'react-icons/fa'
+import SearchBar from '@/components/common/search-bar'
 
 export default function SectionIndex() {
   return (
@@ -18,7 +19,10 @@ export default function SectionIndex() {
           <a href="#">即時消息即時消息即時消息即時消息即時消息即時消息</a>
         </div>
       </div>
-      <div className="kv" />
+      <div className="kv">
+        <div className="title">一鍵搜尋，最優惠夜市小吃輕鬆網羅</div>
+        <SearchBar />
+      </div>
       <div className="section-index">
         <div className="index-title">最新消息</div>
         <h1>aaaaa</h1>
