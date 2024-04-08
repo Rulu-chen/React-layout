@@ -69,7 +69,10 @@ $gray: rgb(229, 225, 221);
     align-items: center;
     justify-content: center;
     width: 800px;
-
+    .form-control {
+      padding: 0;
+      height: initial;
+    }
     button {
       @media (max-width: 992px) {
         width: 50%;
@@ -176,7 +179,7 @@ $gray: rgb(229, 225, 221);
     top: -40px;
   }
   // 最新消息
-  
+
   //店家
 
   //商品
