@@ -112,9 +112,10 @@ body {
     // color:$primary;
     border-radius: 12px;
   }
-  // .form-select option:hover{
-  //   background-color: $light-primary;
-  // }
+  .form-select:hover {
+    background-color: #f0f0f0;
+    color: #333; 
+  }
   // 勾選
   .form-check {
     color: $primary;
