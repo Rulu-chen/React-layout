@@ -37,7 +37,7 @@ export default function NavbarLogout() {
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="me-auto" />
-            <ul className="navbar-nav mb-0 mb-lg-0">
+            <ul className="navbar-nav mb-2 mb-lg-0">
               <div className="view-nav-items">
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">

@@ -24,6 +24,89 @@ body {
   padding: 0px 20px;
   position: relative;
 
+  // 各元件CSS設定
+  // 按鈕
+  .btn {
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .btn-light {
+    color: $primary;
+    border: 2px solid #fff;
+    background-color: #fff;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-color: rgb(163, 44, 45);
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-focus-shadow-rgb: 255, 255, 255;
+    --bs-btn-active-color: rgb(163, 44, 45);
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: rgb(163, 44, 45);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(63, 44, 45, 0.125);
+  }
+  .btn-light:hover {
+    border: 2px solid $primary;
+  }
+  .btn-outline-primary {
+    border-radius: 20px;
+    border: 2px solid $primary;
+    background-color: #fff;
+    color: $primary;
+  }
+
+  // 表單
+  .form-label {
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+    color: $primary;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .form-control {
+    border: 2px solid $primary;
+    border-radius: 12px;
+    padding: 17px 30px;
+    height: 50px;
+  }
+// TODO::修改滾輪
+  .form-control::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .form-control::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: $primary;
+  }
+  .form-control::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  // 下拉選單
+  .form-select {
+    border: 2px solid $primary;
+    --bs-form-select-bg-img-color: (163, 44, 45);
+    border-radius: 12px;
+  }
+  // 勾選
+  .form-check {
+    color: $primary;
+    font-weight: 700;
+  }
+  .form-check-input {
+    border: 2px solid $primary;
+  }
+  .form-check-input:focus {
+    border: 2px solid $primary;
+    box-shadow: none;
+  }
+
   .my-container-fluid {
     @media (max-width: 992px) {
       border-radius: 0px;
@@ -31,6 +114,9 @@ body {
       padding-right: 10px;
       padding-bottom: 0px;
       border-radius: 0px;
+      // border 手機版有奇怪的破圖才設的 沒效果可拿掉
+      // border-right: 2px solid $primary;
+      // border-left: 2px solid $primary;
     }
     align-self: stretch;
     padding-left: 20px;
@@ -324,7 +410,8 @@ body {
           justify-content: center;
         }
 
-        .dropdown-webbar:hover,.dropdown-webbar.show {
+        .dropdown-webbar:hover,
+        .dropdown-webbar.show {
           .fa-bars {
             color: $light-primary;
           }
@@ -365,6 +452,7 @@ body {
       .simple-news {
         @media (max-width: 992px) {
           border: $primary solid 10px;
+          border-top: none;
           border-radius: 30px 30px 0px 0px;
           padding: 15px 20px 25px 20px;
         }
@@ -402,6 +490,7 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;
             color: $black;
+            text-decoration: none;
           }
         }
       }
@@ -410,7 +499,9 @@ body {
         @media (max-width: 992px) {
           border: $primary solid 10px;
           border-radius: 30px 30px 0px 0px;
-          padding: 20px 20px 60px 20px;
+          padding: 20px 20px 70px 20px;
+          height: 50vh;
+          gap: 15px;
         }
         height: 90vh;
         margin-top: -20px;
@@ -420,6 +511,7 @@ body {
         border-radius: 70px 70px 0px 0px;
         border: $primary solid 20px;
         padding: 80px 80px 150px 80px;
+        gap: 40px;
       }
       .section-index {
         @media (max-width: 992px) {
@@ -447,10 +539,10 @@ body {
       .section {
         @media (max-width: 992px) {
           border: $primary solid 10px;
+          border-bottom: $primary solid 20px;
           border-top: none;
           border-radius: 30px 30px 0px 0px;
           padding: 20px 20px 60px 20px;
-          margin-top: -10px;
         }
         display: flex;
         padding: 80px 80px 150px 80px;
@@ -537,7 +629,7 @@ body {
                 align-self: stretch;
                 font-size: 16px;
               }
-              font-size: 22px;
+              font-size: 28px;
               font-weight: 500;
               color: #fff;
               text-decoration: none;
@@ -556,13 +648,13 @@ body {
               @media (max-width: 992px) {
                 padding: 0;
               }
-              padding-right: 40px;
+              padding-right: 8%;
             }
             :not(:first-child) {
               @media (max-width: 992px) {
                 padding: 0;
               }
-              padding-left: 40px;
+              padding-left: 8%;
             }
             :not(:last-child) {
               border-right: 1px solid #fff;
@@ -582,13 +674,13 @@ body {
               @media (max-width: 992px) {
                 padding: 0;
               }
-              padding-left: 40px;
+              padding-left: 8%;
             }
             :not(:last-child) {
               @media (max-width: 992px) {
                 padding: 0;
               }
-              padding-right: 50px;
+              padding-right: 8%;
             }
             :not(:last-child) {
               border-right: 1px solid #fff;
