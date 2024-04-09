@@ -20,7 +20,7 @@ export default function Navbar() {
             </a>
             <div className="right-icons">
               <a className="navbar-brand min-cart" href="#">
-                <FaShoppingCart />
+                <FaShoppingCart className="fa-solid fa-cart-shopping" />
               </a>
               <button
                 className="navbar-toggler"

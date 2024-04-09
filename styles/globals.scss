@@ -24,7 +24,7 @@ body {
   padding: 0px 20px;
   position: relative;
 
-  // 各元件CSS設定
+  // 共通元件CSS設定
   // 按鈕
   .btn {
     color: #fff;
@@ -70,9 +70,9 @@ body {
   .form-control {
     border: 2px solid $primary;
     border-radius: 12px;
-    padding: 17px 30px;
-    height: 50px;
+    padding: 12px 30px;
   }
+
   // textarea 滾輪修改(最後選擇不顯示)
   .form-control::-webkit-scrollbar {
     display: none;
@@ -90,7 +90,8 @@ body {
     border-radius: 0px 12px 0px 0px;
   }
   .form-control::-webkit-resizer {
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: transparent;
     border-radius: 0px 0px 12px 0px;
   }
   .form-control::-webkit-scrollbar-corner {
@@ -109,13 +110,17 @@ body {
   // 下拉選單
   .form-select {
     border: 2px solid $primary;
-    // color:$primary;
     border-radius: 12px;
+    padding: 12px 30px;
   }
   .form-select:hover {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #333;
   }
+  .form-select option{
+    border-radius: 12px;
+  }
+
   // 勾選
   .form-check {
     color: $primary;
@@ -129,6 +134,7 @@ body {
     box-shadow: none;
   }
 
+  // 頁碼
   nav {
     .pagination {
       --bs-pagination-padding-x:0px;
@@ -136,7 +142,7 @@ body {
       --bs-pagination-border-color:transparent;
       --bs-pagination-hover-border-color:transparent;
       --bs-pagination-active-border-color:transparent;
-      --bs-pagination-focus-bg:transparent;
+      --bs-pagination-focus-bg:#fff;
       --bs-pagination-border-radius:5px;
       --bs-pagination-active-bg:rgb(234, 105, 106);
       --bs-pagination-disabled-color:rgb(183, 180, 177);
@@ -166,7 +172,6 @@ body {
   }
 
   // 以下是layout設定
-
   .my-container-fluid {
     @media (max-width: 992px) {
       border-radius: 0px;
@@ -245,7 +250,7 @@ body {
         }
       }
 
-      // 手機板右邊icons
+      // 手機板右邊 icons
       .container-fluid .right-icons {
         display: flex;
         align-items: center;
@@ -262,6 +267,9 @@ body {
           text-align: center;
         }
         display: none;
+      }
+      .navbar-brand.min-cart:hover{
+        color: $light-primary;
       }
 
       // Navbar相關設定
@@ -290,7 +298,6 @@ body {
           border-width: 25px;
           top: -40px;
           left: 100px;
-          /* 設定 width、height 可更好理解原理 */
           height: 0px;
           width: 0px;
         }
@@ -499,16 +506,18 @@ body {
       }
     }
 
+    // 主內容區
     main {
-      .bgColor {
-        margin-top: -20px;
-        border-right: 20px solid $primary;
-        border-left: 20px solid $primary;
-        padding: 20px;
-        border-radius: 70px 70px 0px 0px;
-        background-color: $secondary;
-      }
+      // .bgColor {
+      //   margin-top: -20px;
+      //   border-right: 20px solid $primary;
+      //   border-left: 20px solid $primary;
+      //   padding: 20px;
+      //   border-radius: 70px 70px 0px 0px;
+      //   background-color: $secondary;
+      // }
 
+      // 優惠輪播欄
       .simple-news {
         @media (max-width: 992px) {
           border: $primary solid 10px;
@@ -555,6 +564,7 @@ body {
         }
       }
 
+      // 主視覺區
       .kv {
         @media (max-width: 992px) {
           border: $primary solid 10px;
@@ -573,6 +583,8 @@ body {
         padding: 80px 80px 150px 80px;
         gap: 40px;
       }
+
+      // 首頁的section
       .section-index {
         @media (max-width: 992px) {
           border: $primary solid 10px;
@@ -596,6 +608,7 @@ body {
         border: $primary solid 20px;
         flex-direction: column;
       }
+      // 一般的section
       .section {
         @media (max-width: 992px) {
           border: $primary solid 10px;
@@ -709,12 +722,14 @@ body {
                 padding: 0;
               }
               padding-right: 8%;
+              // padding-right: 4%;
             }
             :not(:first-child) {
               @media (max-width: 992px) {
                 padding: 0;
               }
               padding-left: 8%;
+              // padding-left: 4%;
             }
             :not(:last-child) {
               border-right: 1px solid #fff;
@@ -735,12 +750,14 @@ body {
                 padding: 0;
               }
               padding-left: 8%;
+              // padding-left: 4%;
             }
             :not(:last-child) {
               @media (max-width: 992px) {
                 padding: 0;
               }
               padding-right: 8%;
+              // padding-right: 4%;
             }
             :not(:last-child) {
               border-right: 1px solid #fff;

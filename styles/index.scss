@@ -70,8 +70,7 @@ $gray: rgb(229, 225, 221);
     justify-content: center;
     width: 800px;
     .form-control {
-      padding: 0;
-      height: initial;
+      padding: 6px 12px;
     }
     button {
       @media (max-width: 992px) {
@@ -82,7 +81,6 @@ $gray: rgb(229, 225, 221);
       }
       font-size: 16px;
       font-weight: 700;
-      width: 100px;
     }
     form {
       width: 100%;
@@ -108,6 +106,8 @@ $gray: rgb(229, 225, 221);
     font-size: 25px;
   }
 }
+
+// 主視覺
 .kv {
   .kv-title {
     @media (max-width: 992px) {

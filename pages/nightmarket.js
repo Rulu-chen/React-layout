@@ -14,13 +14,13 @@ export default function Nightmarket() {
   return (
     <>
       <Section>
-        <h1>AAAAAAA</h1>
         {/* <Image src="/images/layout/icons.png" alt="" width={500} height={500} /> */}
         <SearchBar />
 
+        <h1 className="mt-5">【有調整過的boostrap元件】</h1>
         {/* 按鈕 */}
         <>
-          <h3>==主要用這三個按鈕==</h3>
+          <h3 className="mt-5">==主要用這三個按鈕==</h3>
           <button type="button" className="btn btn-primary">
             加入購物車
           </button>
@@ -30,56 +30,64 @@ export default function Nightmarket() {
           <button type="button" className="btn btn-light">
             Light
           </button>
-          <h1>=======</h1>
-          <button type="button" className="btn btn-secondary">
-            Secondary
-          </button>
-          <button type="button" className="btn btn-success">
-            Success
-          </button>
-          <button type="button" className="btn btn-danger">
-            Danger
-          </button>
-          <button type="button" className="btn btn-warning">
-            Warning
-          </button>
-          <button type="button" className="btn btn-info">
-            Info
-          </button>
 
-          <button type="button" className="btn btn-dark">
-            Dark
-          </button>
-          <button type="button" className="btn btn-link">
-            Link
-          </button>
+          <h4 className="mt-5">===這裡只是參考用按鈕====</h4>
+          <div className="other-none d-flex flex-row flex-wrap mb-3 mt-3">
+            <button type="button" className="btn btn-secondary">
+              Secondary
+            </button>
+            <button type="button" className="btn btn-success">
+              Success
+            </button>
+            <button type="button" className="btn btn-danger">
+              Danger
+            </button>
+            <button type="button" className="btn btn-warning">
+              Warning
+            </button>
+            <button type="button" className="btn btn-info">
+              Info
+            </button>
+            <button type="button" className="btn btn-dark">
+              Dark
+            </button>
+            <button type="button" className="btn btn-link">
+              Link
+            </button>
+          </div>
         </>
 
         <>
-          <button type="button" className="btn btn-outline-secondary">
-            Secondary
-          </button>
-          <button type="button" className="btn btn-outline-success">
-            Success
-          </button>
-          <button type="button" className="btn btn-outline-danger">
-            Danger
-          </button>
-          <button type="button" className="btn btn-outline-warning">
-            Warning
-          </button>
-          <button type="button" className="btn btn-outline-info">
-            Info
-          </button>
-          <button type="button" className="btn btn-outline-light">
-            Light
-          </button>
-          <button type="button" className="btn btn-outline-dark">
-            Dark
-          </button>
+          <div className="other-none d-flex flex-row flex-wrap mb-3">
+            <button type="button" className="btn btn-outline-secondary">
+              Secondary
+            </button>
+            <button type="button" className="btn btn-outline-success">
+              Success
+            </button>
+            <button type="button" className="btn btn-outline-danger">
+              Danger
+            </button>
+            <button type="button" className="btn btn-outline-warning">
+              Warning
+            </button>
+            <button type="button" className="btn btn-outline-info">
+              Info
+            </button>
+            <button type="button" className="btn btn-outline-light">
+              Light
+            </button>
+            <button type="button" className="btn btn-outline-dark">
+              Dark
+            </button>
+          </div>
         </>
 
-        {/* 分頁 */}
+        <h3 className="mb-3 mt-5">==以下是調整過的,使用可從下面複製==</h3>
+        <p>尤其是頁碼的html結構和bootstrap不一樣 要從這裡複製</p>
+
+        <h4 className="mb-3 mt-5">===頁碼===</h4>
+        {/* 頁碼開始 */}
         <nav aria-label="Page navigation example">
           <ul className="pagination">
             <div className="page-pre">
@@ -133,8 +141,10 @@ export default function Nightmarket() {
             </div>
           </ul>
         </nav>
+        {/* 頁碼開始結束 */}
 
-        {/* 表單 */}
+        <h4 className="mb-3 mt-5">===表單====</h4>
+        {/* 表單開始 */}
         <form>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
@@ -174,8 +184,10 @@ export default function Nightmarket() {
             Submit
           </button>
         </form>
+        {/* 表單結束 */}
 
-        {/* 輸入框 */}
+        <h4 className="mb-3 mt-5">===輸入框===</h4>
+        {/* 輸入框開始 */}
         <>
           <div className="mb-3">
             <label htmlFor="exampleFormControlInput1" className="form-label">
@@ -200,16 +212,20 @@ export default function Nightmarket() {
             />
           </div>
         </>
+        {/* 輸入框結束 */}
 
-        {/* 下拉選擇 */}
+        <h4 className="mb-3 mt-5">===下拉選單===</h4>
+        {/* 下拉選擇開始 */}
         <select className="form-select" aria-label="Default select example">
           <option selected="">Open this select menu</option>
           <option value={1}>One</option>
           <option value={2}>Two</option>
           <option value={3}>Three</option>
         </select>
+        {/* 下拉選擇結束 */}
 
-        {/* 選取 */}
+        <h4 className="mb-3 mt-5">===選取===</h4>
+        {/* 選取開始 */}
         <>
           <div className="form-check">
             <input
@@ -235,6 +251,7 @@ export default function Nightmarket() {
             </label>
           </div>
         </>
+        {/* 選取結束 */}
       </Section>
     </>
   )
