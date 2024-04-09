@@ -2,6 +2,13 @@ import Section from '@/components/layout/section'
 import React from 'react'
 import Image from 'next/image'
 import SearchBar from '@/components/common/search-bar'
+// 用在分頁的icon
+import {
+  FaAngleDoubleLeft,
+  FaAngleDoubleRight,
+  FaAngleLeft,
+  FaAngleRight,
+} from 'react-icons/fa'
 
 export default function Nightmarket() {
   return (
@@ -13,9 +20,9 @@ export default function Nightmarket() {
 
         {/* 按鈕 */}
         <>
-        <h3>==主要用這三個按鈕==</h3>
+          <h3>==主要用這三個按鈕==</h3>
           <button type="button" className="btn btn-primary">
-          加入購物車
+            加入購物車
           </button>
           <button type="button" className="btn btn-outline-primary">
             加入購物車
@@ -49,7 +56,6 @@ export default function Nightmarket() {
         </>
 
         <>
-
           <button type="button" className="btn btn-outline-secondary">
             Secondary
           </button>
@@ -76,31 +82,55 @@ export default function Nightmarket() {
         {/* 分頁 */}
         <nav aria-label="Page navigation example">
           <ul className="pagination">
-            <li className="page-item">
-              <a className="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">«</span>
-              </a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#">
-                1
-              </a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#">
-                2
-              </a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#">
-                3
-              </a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">»</span>
-              </a>
-            </li>
+            <div className="page-pre">
+              <li className="page-item disabled">
+                <a className="page-link" href="#" aria-label="First">
+                  <span aria-hidden="true">
+                    <FaAngleDoubleLeft />
+                  </span>
+                </a>
+              </li>
+              <li className="page-item disabled">
+                <a className="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <FaAngleLeft />
+                  </span>
+                </a>
+              </li>
+            </div>
+            <div className="page-number">
+              <li className="page-item active">
+                <a className="page-link" href="#">
+                  1
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#">
+                  2
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#">
+                  3
+                </a>
+              </li>
+            </div>
+            <div className="page-next">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">
+                    <FaAngleRight />
+                  </span>
+                </a>
+              </li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="End">
+                  <span aria-hidden="true">
+                    <FaAngleDoubleRight />
+                  </span>
+                </a>
+              </li>
+            </div>
           </ul>
         </nav>
 

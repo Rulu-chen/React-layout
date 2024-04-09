@@ -73,7 +73,7 @@ body {
     padding: 17px 30px;
     height: 50px;
   }
-  // 滾輪修改
+  // textarea 滾輪修改(最後選擇不顯示)
   .form-control::-webkit-scrollbar {
     display: none;
     width: 12px;
@@ -114,7 +114,7 @@ body {
   }
   .form-select:hover {
     background-color: #f0f0f0;
-    color: #333; 
+    color: #333;
   }
   // 勾選
   .form-check {
@@ -128,6 +128,44 @@ body {
     border: 2px solid $primary;
     box-shadow: none;
   }
+
+  nav {
+    .pagination {
+      --bs-pagination-padding-x:0px;
+      --bs-pagination-padding-y:0px;
+      --bs-pagination-border-color:transparent;
+      --bs-pagination-hover-border-color:transparent;
+      --bs-pagination-active-border-color:transparent;
+      --bs-pagination-focus-bg:transparent;
+      --bs-pagination-border-radius:5px;
+      --bs-pagination-active-bg:rgb(234, 105, 106);
+      --bs-pagination-disabled-color:rgb(183, 180, 177);
+      --bs-pagination-disabled-bg:rgb(229, 225, 221);
+      --bs-pagination-disabled-border-color:transparent;
+      color: $primary;
+      font-size: 16px;
+      font-weight: 800;
+      gap:20px;
+      border: none;
+      .page-number,.page-pre,.page-next{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+    }
+    .pagination .page-item {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+
+    }
+    .pagination .page-link {
+      border-radius: 5px; 
+    }
+  }
+
+  // 以下是layout設定
 
   .my-container-fluid {
     @media (max-width: 992px) {
