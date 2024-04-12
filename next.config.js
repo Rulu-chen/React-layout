@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['via.placeholder.com', 'localhost'],
+    domains: ['via.placeholder.com', 'localhost','storage.googleapis.com'],
   },
   // comment for render twice issue
   // avoid cors with proxy

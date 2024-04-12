@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { FaSistrix } from 'react-icons/fa'
+import { FaSistrix, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
 import SearchBar from '@/components/common/search-bar'
+import CustomSlider from '@/components/index/custom-slider'
+import StoreSlider from '@/components/index/store-slider'
 
 export default function SectionIndex() {
   return (
@@ -52,38 +54,191 @@ export default function SectionIndex() {
           </div>
         </div>
       </div>
-      <div className="section-index">
+      <div
+        className="section-index index-nop 
+discount"
+      >
         <div className="index-title">最新消息</div>
-        <h1>aaaaa</h1>
+        <div className="slide-group">
+          {/* <CustomSlider /> */}
+        </div>
       </div>
-      <div className="section-index">
+      <div className="section-index index-nop index-store">
         <div className="index-title">店家</div>
-        <h1>aaaaa</h1>
+        {/* <StoreSlider/> */}
+        <div className="store-index-gruop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={29}
+            height={162}
+            viewBox="0 0 29 162"
+            fill="none"
+            className="fa-arrow pre-arrow"
+          >
+            <path
+              d="M28.1426 1L0.869039 81.1429L28.1426 161.285"
+              stroke="#070505"
+            />
+          </svg>
+
+          <div className="card-store-index-group">
+            <div className="card-store-index">
+              <div className="store-name">月氏激蛋葱油餅</div>
+              <div className="store-market">寧夏夜市</div>
+              <button type="button" className="btn btn-light">
+                看更多
+              </button>
+            </div>
+            <div className="card-store-index">
+              <div className="store-name">月氏激蛋葱油餅</div>
+              <div className="store-market">寧夏夜市</div>
+              <button type="button" className="btn btn-light">
+                看更多
+              </button>
+            </div>
+            <div className="card-store-index">
+              <div className="store-name">月氏激蛋葱油餅</div>
+              <div className="store-market">寧夏夜市</div>
+              <button type="button" className="btn btn-light">
+                看更多
+              </button>
+            </div>
+            <div className="card-store-index">
+              <div className="store-name">月氏激蛋葱油餅</div>
+              <div className="store-market">寧夏夜市</div>
+              <button type="button" className="btn btn-light">
+                看更多
+              </button>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={29}
+            height={162}
+            viewBox="0 0 29 162"
+            fill="none"
+            className="fa-arrow next-arrow"
+          >
+            <path
+              d="M1.14258 1L28.4161 81.1429L1.14258 161.285"
+              stroke="#070505"
+            />
+          </svg>
+        </div>
       </div>
-      <div className="section-index">
+      <div className="section-index index-nop">
         <div className="index-title">商品</div>
-        <div className="index-products">
-          <div className="index-products-card">
-            <div className="card" style={{ width: '18rem' }}>
-              <Image
-                src="/images/layout/icons.png"
-                alt="web-icon"
-                className="card-img-top"
-                width={250}
-                height={250}
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
+        <div className="product-index-gruop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={29}
+            height={162}
+            viewBox="0 0 29 162"
+            fill="none"
+            className="fa-arrow pre-arrow"
+          >
+            <path
+              d="M28.1426 1L0.869039 81.1429L28.1426 161.285"
+              stroke="#070505"
+            />
+          </svg>
+
+          <div className="card-product-index-group">
+            <div className="card-product-index">
+              <div className="product-title">
+                <div className="product-name">姊姊抓的餅</div>
+                <div className="product-name">豬排蛋</div>
+              </div>
+              <div className="product-img">
+                <button type="button" className="btn btn-light">
+                  看更多
+                </button>
+              </div>
+              <div className="product-text">
+                <div className="price">$70</div>
+                <div className="quantity">
+                  <button>
+                    <FaPlus />
+                  </button>
+                  <input type="text" min="1"/>
+                  <button>
+                    <FaMinus />
+                  </button>
+                </div>
+
+                <button type="button" className="btn btn-primary">
+                  加入購物車 <FaShoppingCart />
+                </button>
+              </div>
+            </div>
+            <div className="card-product-index">
+              <div className="product-title">
+                <div className="product-name">姊姊抓的餅</div>
+                <div className="product-name">豬排蛋</div>
+              </div>
+              <div className="product-img">
+                <button type="button" className="btn btn-light">
+                  看更多
+                </button>
+              </div>
+              <div className="product-text">
+                <div className="price">$70</div>
+                <div className="quantity">
+                  <button>
+                    <FaPlus />
+                  </button>
+                  <input type="text" min="1" />
+                  <button>
+                    <FaMinus />
+                  </button>
+                </div>
+
+                <button type="button" className="btn btn-primary">
+                  加入購物車 <FaShoppingCart />
+                </button>
+              </div>
+            </div>
+            <div className="card-product-index">
+              <div className="product-title">
+                <div className="product-name">姊姊抓的餅</div>
+                <div className="product-name">豬排蛋</div>
+              </div>
+              <div className="product-img">
+                <button type="button" className="btn btn-light">
+                  看更多
+                </button>
+              </div>
+              <div className="product-text">
+                <div className="price">$70</div>
+                <div className="quantity">
+                  <button>
+                    <FaPlus />
+                  </button>
+                  <input type="text" min="1" />
+                  <button>
+                    <FaMinus />
+                  </button>
+                </div>
+
+                <button type="button" className="btn btn-primary">
+                  加入購物車 <FaShoppingCart />
+                </button>
               </div>
             </div>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={29}
+            height={162}
+            viewBox="0 0 29 162"
+            fill="none"
+            className="fa-arrow next-arrow"
+          >
+            <path
+              d="M1.14258 1L28.4161 81.1429L1.14258 161.285"
+              stroke="#070505"
+            />
+          </svg>
         </div>
       </div>
       <div className="section-index">

@@ -117,7 +117,7 @@ body {
     background-color: #ffffff;
     color: #333;
   }
-  .form-select option{
+  .form-select option {
     border-radius: 12px;
   }
 
@@ -137,23 +137,25 @@ body {
   // 頁碼
   nav {
     .pagination {
-      --bs-pagination-padding-x:0px;
-      --bs-pagination-padding-y:0px;
-      --bs-pagination-border-color:transparent;
-      --bs-pagination-hover-border-color:transparent;
-      --bs-pagination-active-border-color:transparent;
-      --bs-pagination-focus-bg:#fff;
-      --bs-pagination-border-radius:5px;
-      --bs-pagination-active-bg:rgb(234, 105, 106);
-      --bs-pagination-disabled-color:rgb(183, 180, 177);
-      --bs-pagination-disabled-bg:rgb(229, 225, 221);
-      --bs-pagination-disabled-border-color:transparent;
+      --bs-pagination-padding-x: 0px;
+      --bs-pagination-padding-y: 0px;
+      --bs-pagination-border-color: transparent;
+      --bs-pagination-hover-border-color: transparent;
+      --bs-pagination-active-border-color: transparent;
+      --bs-pagination-focus-bg: #fff;
+      --bs-pagination-border-radius: 5px;
+      --bs-pagination-active-bg: rgb(234, 105, 106);
+      --bs-pagination-disabled-color: rgb(183, 180, 177);
+      --bs-pagination-disabled-bg: rgb(229, 225, 221);
+      --bs-pagination-disabled-border-color: transparent;
       color: $primary;
       font-size: 16px;
       font-weight: 800;
-      gap:20px;
+      gap: 20px;
       border: none;
-      .page-number,.page-pre,.page-next{
+      .page-number,
+      .page-pre,
+      .page-next {
         display: flex;
         flex-direction: row;
         gap: 5px;
@@ -164,10 +166,9 @@ body {
       height: 40px;
       line-height: 40px;
       text-align: center;
-
     }
     .pagination .page-link {
-      border-radius: 5px; 
+      border-radius: 5px;
     }
   }
 
@@ -268,7 +269,7 @@ body {
         }
         display: none;
       }
-      .navbar-brand.min-cart:hover{
+      .navbar-brand.min-cart:hover {
         color: $light-primary;
       }
 
@@ -573,7 +574,7 @@ body {
           height: 50vh;
           gap: 15px;
         }
-        height: 90vh;
+        // height: 90vh;
         margin-top: -20px;
         background-color: $secondary;
         background-image: url(../public/images/layout/P_20240224_194256.jpg);
@@ -585,6 +586,7 @@ body {
       }
 
       // 首頁的section
+
       .section-index {
         @media (max-width: 992px) {
           border: $primary solid 10px;
@@ -607,6 +609,15 @@ body {
         border-radius: 70px 70px 0px 0px;
         border: $primary solid 20px;
         flex-direction: column;
+      }
+      .section-index.index-nop {
+        @media (max-width: 992px) {
+          padding: 20px 0px 60px 0px;
+        }
+      }
+      .section-index.index-nop.discount {
+        padding: 0px;
+        // height: 90vh;
       }
       // 一般的section
       .section {
