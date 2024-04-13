@@ -181,7 +181,93 @@ $gray: rgb(229, 225, 221);
     top: -40px;
   }
   // 最新消息
-
+  .slide-container {
+    overflow: visible;
+    .slide-group {
+      @media (max-width: 992px) {
+        height: 50vh;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 50px 50px 0px 0px;
+      .slide-item {
+        @media (max-width: 992px) {
+          height: 145px;
+          width: 180px;
+          border-radius: 20px;
+          top: 5vh;
+        }
+        // background-color: #e9e7e7;
+        overflow: hidden;
+        height: 300px;
+        width: 500px;
+        border-radius: 80px;
+        position: absolute;
+        top: 15vh;
+        // 從圖片開始設定圖片與文字
+        .discount-img {
+          @media (max-width: 992px) {
+            border-radius: 20px;
+          }
+          border-radius: 80px;
+          position: relative;
+        }
+        .discount-text {
+          @media (max-width: 992px) {
+            left: 10px;
+            bottom: 10px;
+          }
+          color: #fff;
+          position: absolute;
+          font-weight: 700;
+          left: 30px;
+          bottom: 30px;
+          text-shadow: 0px 0px 15px $black;
+        }
+        .discount-store {
+          @media (max-width: 992px) {
+            font-size: 12px;
+            bottom: 35px;
+          }
+          font-size: 28px;
+          bottom: 85px;
+        }
+        .discount-name {
+          @media (max-width: 992px) {
+            font-size: 18px;
+          }
+          font-size: 40px;
+        }
+      }
+      .slide-item:first-child {
+        @media (max-width: 992px) {
+          left: -80px;
+          top: 7vh;
+          height: 120px;
+          width: 145px;
+        }
+        position: absolute;
+        left: -250px;
+        top: 50vh;
+      }
+      .slide-item:last-child {
+        @media (max-width: 992px) {
+          right: -80px;
+          top: 7vh;
+          height: 120px;
+          width: 145px;
+        }
+        position: absolute;
+        top: -150px;
+        right: -250px;
+      }
+    }
+  }
 
   //店家
   .store-index-gruop {
@@ -193,11 +279,17 @@ $gray: rgb(229, 225, 221);
     position: relative;
 
     .pre-arrow {
+      @media (max-width: 992px) {
+        display: none;
+      }
       position: absolute;
       margin-top: 60px;
       left: -50px;
     }
     .next-arrow {
+      @media (max-width: 992px) {
+        display: none;
+      }
       position: absolute;
       margin-top: 60px;
 
@@ -210,7 +302,7 @@ $gray: rgb(229, 225, 221);
     }
     .card-store-index-group {
       @media (max-width: 992px) {
-        gap: 0;
+        gap: 3px;
       }
       display: flex;
       justify-content: space-around;
@@ -250,6 +342,7 @@ $gray: rgb(229, 225, 221);
         .store-market {
           @media (max-width: 992px) {
             font-size: 12px;
+            padding-bottom: 20px;
           }
           color: $primary;
           font-size: 28px;
@@ -260,6 +353,7 @@ $gray: rgb(229, 225, 221);
         .btn {
           @media (max-width: 992px) {
             font-size: 10px;
+            padding: 4px 12px;
           }
         }
       }
@@ -267,22 +361,30 @@ $gray: rgb(229, 225, 221);
   }
   //商品
   .product-index-gruop {
+    @media (max-width: 992px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     position: relative;
-
     .pre-arrow {
+      @media (max-width: 992px) {
+        display: none;
+      }
       position: absolute;
       margin-top: 60px;
       left: -50px;
     }
     .next-arrow {
+      @media (max-width: 992px) {
+        display: none;
+      }
       position: absolute;
       margin-top: 60px;
-
       right: -50px;
     }
     .fa-arrow:hover {
@@ -292,7 +394,7 @@ $gray: rgb(229, 225, 221);
     }
     .card-product-index-group {
       @media (max-width: 992px) {
-        gap: 0;
+        gap: 3px;
       }
       display: flex;
       justify-content: space-between;
@@ -309,6 +411,8 @@ $gray: rgb(229, 225, 221);
         @media (max-width: 992px) {
           width: 150px;
           height: 200px;
+          padding: 0;
+          gap: 12px;
         }
         width: 100%;
         align-self: stretch;
@@ -319,13 +423,29 @@ $gray: rgb(229, 225, 221);
         flex-direction: column;
         gap: 20px;
 
+        .product-top {
+          @media (max-width: 992px) {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 8px;
+          }
+          width: 100%;
+        }
         .product-title {
+          @media (max-width: 992px) {
+            gap: 4px;
+            margin-bottom: 4px;
+          }
           display: flex;
           flex-direction: column;
           gap: 10px;
           align-items: start;
         }
         .product-name {
+          @media (max-width: 992px) {
+            padding: 2px 20px 2px 8px;
+            font-size: 10px;
+            font-weight: 700;
+          }
           background-color: $primary;
           font-size: 16px;
           color: #fff;
@@ -333,6 +453,10 @@ $gray: rgb(229, 225, 221);
           padding: 4px 38px 4px 12px;
         }
         .product-img {
+          @media (max-width: 992px) {
+            height: 100px;
+            width: 100px;
+          }
           height: 350px;
           width: 350px;
           border-radius: 500px;
@@ -351,6 +475,11 @@ $gray: rgb(229, 225, 221);
           }
         }
         .product-text {
+          @media (max-width: 992px) {
+            font-size: 12px;
+            flex-direction: column;
+            align-items: start;
+          }
           display: flex;
           flex-direction: row;
           font-size: 16px;
@@ -358,7 +487,41 @@ $gray: rgb(229, 225, 221);
           width: 100%;
           align-items: center;
           justify-content: space-between;
+          .btn.btn-primary {
+            @media (max-width: 992px) {
+              padding: 6px;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .cart-text {
+            @media (max-width: 992px) {
+              display: none;
+            }
+            padding-right: 5px;
+          }
+          .fa-cart {
+            @media (max-width: 992px) {
+              font-size: 12px;
+            }
+          }
+          .butinput {
+            @media (max-width: 992px) {
+              width: 100%;
+              gap: 0;
+              align-items: center;
+              justify-content: space-between;
+            }
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
           .price {
+            @media (max-width: 992px) {
+              font-size: 16px;
+              font-weight: 500;
+            }
             font-size: 30px;
             color: $primary;
             font-weight: 500;
@@ -368,6 +531,10 @@ $gray: rgb(229, 225, 221);
             flex-direction: row;
             gap: 1px;
             button {
+              @media (max-width: 992px) {
+                height: 20px;
+                width: 20px;
+              }
               height: 37px;
               width: 37px;
               border: none;
@@ -375,6 +542,10 @@ $gray: rgb(229, 225, 221);
               color: $primary;
             }
             input {
+              @media (max-width: 992px) {
+                height: 20px;
+                width: 20px;
+              }
               height: 37px;
               width: 37px;
               font-size: 16px;

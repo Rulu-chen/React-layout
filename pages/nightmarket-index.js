@@ -59,8 +59,50 @@ export default function SectionIndex() {
 discount"
       >
         <div className="index-title">最新消息</div>
-        <div className="slide-group">
-          {/* <CustomSlider /> */}
+        <div className="slide-container">
+          <div className="slide-group">
+            {/* <CustomSlider /> */}
+
+            <div className="slide-item">
+              <Image
+                src="/images/layout/P_20240224_194256.jpg"
+                alt="discount-img"
+                className="discount-img"
+                width={500}
+                height={300}
+              />
+              <div className="discount-text discount-store">
+                士林夜市 林藤茶坊
+              </div>
+              <div className="discount-text discount-name">滿百折三十</div>
+            </div>
+            <div className="slide-item">
+              <Image
+                src="/images/layout/P_20240224_194256.jpg"
+                alt="discount-img"
+                className="discount-img"
+                width={500}
+                height={300}
+              />
+              <div className="discount-text discount-store">
+                士林夜市 林藤茶坊
+              </div>
+              <div className="discount-text discount-name">滿百折三十</div>
+            </div>
+            <div className="slide-item">
+              <Image
+                src="/images/layout/P_20240224_194256.jpg"
+                alt="discount-img"
+                className="discount-img"
+                width={500}
+                height={300}
+              />
+              <div className="discount-text discount-store">
+                士林夜市 林藤茶坊
+              </div>
+              <div className="discount-text discount-name">滿百折三十</div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="section-index index-nop index-store">
@@ -145,84 +187,96 @@ discount"
 
           <div className="card-product-index-group">
             <div className="card-product-index">
-              <div className="product-title">
-                <div className="product-name">姊姊抓的餅</div>
-                <div className="product-name">豬排蛋</div>
-              </div>
-              <div className="product-img">
-                <button type="button" className="btn btn-light">
-                  看更多
-                </button>
+              <div className="product-top">
+                <div className="product-title">
+                  <div className="product-name">姊姊抓的餅</div>
+                  <div className="product-name">豬排蛋</div>
+                </div>
+                <div className="product-img">
+                  <button type="button" className="btn btn-light">
+                    看更多
+                  </button>
+                </div>
               </div>
               <div className="product-text">
                 <div className="price">$70</div>
-                <div className="quantity">
-                  <button>
-                    <FaPlus />
-                  </button>
-                  <input type="text" min="1"/>
-                  <button>
-                    <FaMinus />
+                <div className="butinput">
+                  <div className="quantity">
+                    <button>
+                      <FaPlus />
+                    </button>
+                    <input type="text" min="1" />
+                    <button>
+                      <FaMinus />
+                    </button>
+                  </div>
+                  <button type="button" className="btn btn-primary">
+                    <span className="cart-text">加入購物車</span>{' '}
+                    <FaShoppingCart className="fa-cart" />
                   </button>
                 </div>
-
-                <button type="button" className="btn btn-primary">
-                  加入購物車 <FaShoppingCart />
-                </button>
               </div>
             </div>
             <div className="card-product-index">
-              <div className="product-title">
-                <div className="product-name">姊姊抓的餅</div>
-                <div className="product-name">豬排蛋</div>
-              </div>
-              <div className="product-img">
-                <button type="button" className="btn btn-light">
-                  看更多
-                </button>
+              <div className="product-top">
+                <div className="product-title">
+                  <div className="product-name">姊姊抓的餅</div>
+                  <div className="product-name">豬排蛋</div>
+                </div>
+                <div className="product-img">
+                  <button type="button" className="btn btn-light">
+                    看更多
+                  </button>
+                </div>
               </div>
               <div className="product-text">
                 <div className="price">$70</div>
-                <div className="quantity">
-                  <button>
-                    <FaPlus />
-                  </button>
-                  <input type="text" min="1" />
-                  <button>
-                    <FaMinus />
+                <div className="butinput">
+                  <div className="quantity">
+                    <button>
+                      <FaPlus />
+                    </button>
+                    <input type="text" min="1" />
+                    <button>
+                      <FaMinus />
+                    </button>
+                  </div>
+                  <button type="button" className="btn btn-primary">
+                    <span className="cart-text">加入購物車</span>{' '}
+                    <FaShoppingCart className="fa-cart" />
                   </button>
                 </div>
-
-                <button type="button" className="btn btn-primary">
-                  加入購物車 <FaShoppingCart />
-                </button>
               </div>
             </div>
             <div className="card-product-index">
-              <div className="product-title">
-                <div className="product-name">姊姊抓的餅</div>
-                <div className="product-name">豬排蛋</div>
-              </div>
-              <div className="product-img">
-                <button type="button" className="btn btn-light">
-                  看更多
-                </button>
+              <div className="product-top">
+                <div className="product-title">
+                  <div className="product-name">姊姊抓的餅</div>
+                  <div className="product-name">豬排蛋</div>
+                </div>
+                <div className="product-img">
+                  <button type="button" className="btn btn-light">
+                    看更多
+                  </button>
+                </div>
               </div>
               <div className="product-text">
                 <div className="price">$70</div>
-                <div className="quantity">
-                  <button>
-                    <FaPlus />
-                  </button>
-                  <input type="text" min="1" />
-                  <button>
-                    <FaMinus />
+                <div className="butinput">
+                  <div className="quantity">
+                    <button>
+                      <FaPlus />
+                    </button>
+                    <input type="text" min="1" />
+                    <button>
+                      <FaMinus />
+                    </button>
+                  </div>
+                  <button type="button" className="btn btn-primary">
+                    <span className="cart-text">加入購物車</span>{' '}
+                    <FaShoppingCart className="fa-cart" />
                   </button>
                 </div>
-
-                <button type="button" className="btn btn-primary">
-                  加入購物車 <FaShoppingCart />
-                </button>
               </div>
             </div>
           </div>
