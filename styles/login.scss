@@ -29,22 +29,13 @@ $gray: rgb(229, 225, 221);
     transform: translateX(-50%) translateY(-100%) rotate(0deg);
   }
 }
-
-.custom-page {
-  width: 100%;
-  height: 100%;
+.seller-page {
   position: relative;
-  //   TODO:導覽列
-  //   .custom-login-page{
-  //     padding: 0;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 0;
-  //   }
   .lamp-pic {
     position: absolute;
-    top: 40vh;
-    right: -40vh;
+    width: 10px;
+    top: 200px;
+    left: -10px;
     z-index: 1;
     .lamp-obj {
       transform: translateX(-50%) translateY(-100%);
@@ -54,8 +45,31 @@ $gray: rgb(229, 225, 221);
       animation: swing 1s linear infinite;
     }
   }
+}
+.custom-page {
+  position: relative;
+  .lamp-pic {
+    position: absolute;
+    width: 10px;
+    top: 200px;
+    left: 82vw;
+    z-index: 1;
+    .lamp-obj {
+      transform: translateX(-50%) translateY(-100%);
+      transform-origin: center top;
+    }
+    :hover {
+      animation: swing 1s linear infinite;
+    }
+  }
+}
+.custom-page,
+.seller-page {
+  width: 100%;
+  height: 100%;
 
-  .custom-login-group {
+  .custom-login-group,
+  .seller-login-group {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -93,7 +107,7 @@ $gray: rgb(229, 225, 221);
     }
 
     .login-pic {
-      height: 800px;
+      height: 700px;
       width: 700px;
       overflow: hidden;
       display: flex;
@@ -110,7 +124,7 @@ $gray: rgb(229, 225, 221);
       margin-top: -1px;
       padding: 40px 50px 80px 50px;
       gap: 40px;
-      height: 751px;
+      height: 651px;
       border-radius: 0px 20px 20px 0px;
       border-top: 5px solid $primary;
       border-right: 10px solid $primary;
@@ -130,17 +144,20 @@ $gray: rgb(229, 225, 221);
       }
     }
     .custom-input-group form {
-      padding: 80px 0px;
+      padding-top: 40px;
       flex-direction: column;
-    }
-    .custom-input-group.login-type form {
-      padding: 40px 0px 20px 0px;
       border-bottom: 1px solid $deep-gray;
     }
+
     .forget-text {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      .forget-p {
+        text-decoration: none;
+      }
     }
     .btn.btn-primary {
       display: flex;
@@ -181,6 +198,51 @@ $gray: rgb(229, 225, 221);
     .google-login:hover {
       color: #fff;
       background-color: $primary;
+    }
+  }
+
+  .seller-login-group {
+    .nav.nav-tabs {
+      .nav-item {
+        .nav-link {
+          border: 5px solid $primary;
+          border-bottom: none;
+          border-right: none;
+        }
+      }
+    }
+    .seller-input-group form {
+      padding-top: 80px;
+      flex-direction: column;
+      border-bottom: none;
+      z-index: 1;
+    }
+    .seller-input-group.step-1 form {
+      padding-top: 80px;
+      flex-direction: column;
+      border-bottom: none;
+    }
+    .seller-input-group.step-2 form {
+      padding-top: 80px;
+      flex-direction: column;
+      border-bottom: none;
+    }
+
+    .login-pic {
+      border-radius: 0px 20px 20px 0px;
+      border-top: 5px solid $primary;
+      border-left: 5px solid $primary;
+      border-bottom: 5px solid $primary;
+      border-right: 10px solid $primary;
+    }
+
+    .tab-content {
+      border-radius: 20px 0px 0px 20px;
+      border-top: 5px solid $primary;
+      border-left: 10px solid $primary;
+      border-bottom: 5px solid $primary;
+      border-right: none;
+      background-color: rgba(255, 255, 255, 0.5);
     }
   }
 }

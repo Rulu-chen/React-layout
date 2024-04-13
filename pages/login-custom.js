@@ -11,7 +11,7 @@ import {
   FaAngleRight,
 } from 'react-icons/fa'
 
-export default function ExampleLayout() {
+export default function LoginCustom() {
   return (
     <>
       <Section>
@@ -40,7 +40,7 @@ export default function ExampleLayout() {
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button
-                    className="nav-link active"
+                    className="nav-link "
                     id="home-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#home"
@@ -54,7 +54,7 @@ export default function ExampleLayout() {
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
-                    className="nav-link"
+                    className="nav-link active"
                     id="profile-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#profile"
@@ -69,67 +69,13 @@ export default function ExampleLayout() {
               </ul>
               <div className="tab-content" id="myTabContent">
                 <div
-                  className="tab-pane fade show active"
+                  className="tab-pane fade"
                   id="home"
                   role="tabpanel"
                   aria-labelledby="home-tab"
                 >
                   <div className="login-title">
                     <span>一般會員註冊</span>
-                    <button type="button" className="btn btn-outline-primary">
-                      切換商家會員
-                    </button>
-                  </div>
-                  <div className="custom-input-group">
-                    <form>
-                      <div className="mb-3">
-                        <label
-                          htmlFor="exampleInputEmail1"
-                          className="form-label"
-                        >
-                          帳號
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                        />
-                        <div id="emailHelp" className="form-text"></div>
-                      </div>
-                      <div className="mb-3">
-                        <label
-                          htmlFor="exampleInputPassword1"
-                          className="form-label"
-                        >
-                          密碼
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          id="exampleInputPassword1"
-                        />
-                        <div id="passwordHelp" className="form-text"></div>
-                      </div>
-                      <div className="forget-text">
-                        <Link href="/opt">
-                          <p>忘記密碼？</p>
-                        </Link>
-                      </div>
-                      <button type="submit" className="btn btn-primary">
-                        註冊
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
-                  <div className="login-title">
-                    <span>一般會員登入</span>
                     <button type="button" className="btn btn-outline-primary">
                       切換商家會員
                     </button>
@@ -182,17 +128,79 @@ export default function ExampleLayout() {
                         />
                         <div id="passwordHelp" className="form-text"></div>
                       </div>
-                      <div className="forget-text">
-                        <Link href="/opt">
-                          <p>忘記密碼？</p>
-                        </Link>
-                      </div>
-                      <button type="submit" className="btn btn-primary">
-                        登入
+                      <button
+                        type="submit"
+                        className="btn btn-primary mt-4 mb-4"
+                      >
+                        註冊
                       </button>
                     </form>
 
-                    <button className="google-login">
+                    <button className="google-login mt-5">
+                      <Image
+                        src="/images/login/Google.svg"
+                        alt=""
+                        className="google-pic"
+                        width={33}
+                        height={33}
+                      />
+                      <span>使用google帳戶註冊</span>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  className="tab-pane fade show active"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div className="login-title">
+                    <span>一般會員登入</span>
+                    <button type="button" className="btn btn-outline-primary">
+                      切換商家會員
+                    </button>
+                  </div>
+                  <div className="custom-input-group">
+                    <form>
+                      <div className="mb-3">
+                        <label
+                          htmlFor="exampleInputEmail1"
+                          className="form-label"
+                        >
+                          帳號
+                        </label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" className="form-text"></div>
+                      </div>
+                      <div className="mb-3">
+                        <label
+                          htmlFor="exampleInputPassword1"
+                          className="form-label"
+                        >
+                          密碼
+                        </label>
+                        <input
+                          type="password"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                        <div id="passwordHelp" className="form-text"></div>
+                      </div>
+                      <div className="forget-text">
+                        <Link href="/opt" className="forget-p">
+                          <p>忘記密碼？</p>
+                        </Link>
+                      </div>
+                      <button type="submit" className="btn btn-primary mb-5">
+                        登入
+                      </button>
+                    </form>
+                    <button className="google-login mt-5">
                       <Image
                         src="/images/login/Google.svg"
                         alt=""
