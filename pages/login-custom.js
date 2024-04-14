@@ -80,7 +80,7 @@ export default function LoginCustom() {
                       切換商家會員
                     </button>
                   </div>
-                  <div className="custom-input-group login-type">
+                  <div className="custom-input-group">
                     <form>
                       <div className="mb-3">
                         <label
@@ -136,7 +136,7 @@ export default function LoginCustom() {
                       </button>
                     </form>
 
-                    <button className="google-login mt-5">
+                    <button className="google-login mt-4">
                       <Image
                         src="/images/login/Google.svg"
                         alt=""
@@ -212,6 +212,138 @@ export default function LoginCustom() {
                     </button>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* 以下是min版 */}
+        <div className="custom-page-min">
+          <div className="custom-min-group">
+          {/* 一般會員註冊 */}
+            {/* <div className="custom-min-register">
+              <div className="login-title">
+                <span>一般會員註冊</span>
+                <button type="button" className="btn btn-outline-primary">
+                  切換商家
+                </button>
+              </div>
+              <div className="custom-input-group">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">
+                      <span>E-MAIL</span>
+                      <span className="must-text">*必填項目</span>
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" className="form-text"></div>
+                  </div>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="exampleInputPassword1"
+                      className="form-label"
+                    >
+                      <span>密碼</span>
+                      <span className="must-text">*必填項目</span>
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="exampleInputPassword1"
+                    />
+                    <div id="passwordHelp" className="form-text"></div>
+                  </div>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="exampleInputPassword1"
+                      className="form-label"
+                    >
+                      <span>再次確認密碼</span>
+                      <span className="must-text">*必填項目</span>
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="exampleInputPassword1"
+                    />
+                    <div id="passwordHelp" className="form-text"></div>
+                  </div>
+                  <button type="submit" className="btn btn-primary mt-4 mb-4">
+                    註冊
+                  </button>
+                </form>
+
+                <button className="google-login mt-4">
+                  <Image
+                    src="/images/login/Google.svg"
+                    alt=""
+                    className="google-pic"
+                    width={33}
+                    height={33}
+                  />
+                  <span>使用google帳戶註冊</span>
+                </button>
+              </div>
+            </div> */}
+          {/* 一般會員登入 */}
+            <div className="custom-min-login">
+              <div className="login-title">
+                <span>一般會員登入</span>
+                <button type="button" className="btn btn-outline-primary">
+                  切換商家
+                </button>
+              </div>
+              <div className="custom-input-group">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">
+                      帳號
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" className="form-text"></div>
+                  </div>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="exampleInputPassword1"
+                      className="form-label"
+                    >
+                      密碼
+                    </label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="exampleInputPassword1"
+                    />
+                    <div id="passwordHelp" className="form-text"></div>
+                  </div>
+                  <div className="forget-text">
+                    <Link href="/opt" className="forget-p">
+                      <p>忘記密碼？</p>
+                    </Link>
+                  </div>
+                  <button type="submit" className="btn btn-primary mb-4">
+                    登入
+                  </button>
+                </form>
+                <button className="google-login mt-4">
+                  <Image
+                    src="/images/login/Google.svg"
+                    alt=""
+                    className="google-pic"
+                    width={33}
+                    height={33}
+                  />
+                  <span>使用google帳戶登入</span>
+                </button>
               </div>
             </div>
           </div>
