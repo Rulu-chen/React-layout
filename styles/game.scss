@@ -97,19 +97,24 @@
 .game-play-page {
   width: 100%;
   height: 70vh;
+  // position: relative;
+  .chara-group {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    height: 100px;
+
+    .character-obj {
+      width: initial;
+    }
+  }
+  // 遊戲頁設定
   .game-main {
     display: flex;
     align-items: start;
     justify-content: end;
     flex-direction: row;
     // gap: 100px;
-    position: relative;
-    // 角色
-    .chara-group {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
     // 左側計數
     .time-table {
       display: flex;

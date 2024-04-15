@@ -47,7 +47,7 @@ export default function GamePlay() {
             <div className="character">
               <img
                 src="/images/game/cha01.png"
-                classname="balloon-obj"
+                classname="character-obj"
                 alt="..."
               />
             </div>
