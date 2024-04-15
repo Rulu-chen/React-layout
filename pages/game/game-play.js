@@ -15,6 +15,7 @@ export default function GamePlay() {
     <>
       <Section>
         <div className="game-play-page">
+          <div className="black-mode black-show"></div>
           <div className="game-main">
             <div className="time-table">
               <div className="level">第一關</div>
@@ -43,7 +44,10 @@ export default function GamePlay() {
             </div>
           </div>
           <div className="chara-group">
-            <div className="talk">AAAAAAAAAAAAAAAAAAA</div>
+            <div className="talk-group">
+              <div class="triangle"></div>
+              <div className="talk">呼～總算把這些氣球全部射下來了！雖然只是從遙遠的垃圾變成近一點的垃圾......</div>
+            </div>
             <div className="character">
               {' '}
               <img

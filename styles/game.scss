@@ -93,17 +93,28 @@
 }
 
 // GamePlay頁面
-
+.section {
+  overflow: hidden;
+}
 .game-play-page {
   width: 100%;
   height: 70vh;
   position: relative;
+  .black-mode.black-show {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -80px;
+    left: -80px;
+  }
   .chara-group {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+
     .character {
       position: absolute;
       bottom: -150px;
@@ -117,11 +128,40 @@
         position: absolute;
       }
     }
-    .talk{
+    .talk-group {
       overflow-wrap: break-word;
+      overflow: visible;
+      background: #fff;
+      display: flex;
+      width: 280px;
+      height: 280px;
+      left: 8%;
+      top: 15%;
+      padding: 40px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5) inset;
+      position: relative;
+      .triangle {
+        position: absolute;
+        border-color: #ffffff transparent transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: 30px;
+        bottom: -50px;
+        right: 20%;
+        height: 0px;
+        width: 0px;
+      }
+      .talk {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
     }
   }
-  
+
   // 遊戲頁設定
   .game-main {
     display: flex;
