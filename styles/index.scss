@@ -38,7 +38,7 @@ $gray: rgb(229, 225, 221);
         border-bottom: 1px solid $primary;
         border-radius: 10px 10px 0px 0px;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
         width: 140px;
         padding: 10px 20px;
       }
@@ -51,7 +51,7 @@ $gray: rgb(229, 225, 221);
         }
         background-color: $primary;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
         color: #fff;
       }
     }
@@ -80,7 +80,7 @@ $gray: rgb(229, 225, 221);
         font-weight: 500;
       }
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 500;
     }
     form {
       width: 100%;
@@ -168,7 +168,7 @@ $gray: rgb(229, 225, 221);
       top: -20px;
     }
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     position: absolute;
     color: #fff;
     padding: 15px 0px;
@@ -204,8 +204,8 @@ $gray: rgb(229, 225, 221);
         }
         // background-color: #e9e7e7;
         overflow: hidden;
-        height: 300px;
-        width: 500px;
+        height: 50%;
+        width: 40%;
         border-radius: 80px;
         position: absolute;
         top: 15vh;
@@ -215,6 +215,8 @@ $gray: rgb(229, 225, 221);
             border-radius: 20px;
           }
           border-radius: 80px;
+          width: 100%;
+          height: 100%;
           position: relative;
         }
         .discount-text {
@@ -309,7 +311,7 @@ $gray: rgb(229, 225, 221);
       align-items: center;
       flex-direction: row;
       width: 100%;
-      gap: 10px;
+      gap: 2%;
       .card-store-index:last-child {
         @media (max-width: 992px) {
           display: none;
@@ -444,12 +446,12 @@ $gray: rgb(229, 225, 221);
           @media (max-width: 992px) {
             padding: 2px 20px 2px 8px;
             font-size: 10px;
-            font-weight: 700;
+            font-weight: 500;
           }
           background-color: $primary;
           font-size: 16px;
           color: #fff;
-          font-weight: 700;
+          font-weight: 500;
           padding: 4px 38px 4px 12px;
         }
         .product-img {

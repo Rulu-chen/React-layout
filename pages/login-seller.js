@@ -16,17 +16,17 @@ export default function LoginSeller() {
     <>
       <Section>
         <div className="seller-page">
-          <div className="lamp-pic">
-            <Image
-              src="/images/login/lamp.svg"
-              alt=""
-              className="lamp-obj"
-              width={166}
-              height={242}
-            />
-          </div>
           <div className="seller-login-group">
             <div className="seller-login-page col-5">
+              <div className="lamp-pic">
+                <Image
+                  src="/images/login/lamp.svg"
+                  alt=""
+                  className="lamp-obj"
+                  width={166}
+                  height={242}
+                />
+              </div>
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button

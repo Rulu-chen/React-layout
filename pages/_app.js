@@ -4,6 +4,8 @@ import DefaultLayout from '@/components/layout/default-layout'
 import MainLayout from '@/components/layout/main-layout'
 import '@/styles/index.scss'
 import '@/styles/login.scss'
+import '@/styles/game.scss'
+
 // import '@/styles/customSlider.scss' // 用於輪播
 
 export default function MyApp({ Component, pageProps }) {

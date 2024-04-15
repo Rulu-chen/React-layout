@@ -13,12 +13,28 @@ import {
 export default function GameSelect() {
   return (
     <>
-      <Section>
-        {/* <Image src="/images/layout/icons.png" alt="" width={500} height={500} /> */}
-        {/* <SearchBar />
-        <h1>在這裡放你切好的版,記得就是用兩個Section包住</h1> */}
-        
-      </Section>
+      <div className="game-select-page">
+        <div className="select-content">
+          <div className="game-title">
+            <div className="game-text">夜</div>
+            <div className="game-text">市</div>
+            <div className="game-text">射</div>
+            <div className="game-text">氣</div>
+            <div className="game-text">球</div>
+          </div>
+          <select className="form-select" aria-label="Default select example">
+            <option selected="">請選擇關卡</option>
+            <option value={1}>第一關</option>
+            <option value={2}>第二關</option>
+            <option value={3}>第三關</option>
+            <option value={4}>第四關</option>
+            <option value={5}>第五關</option>
+          </select>
+          <button type="button" className="btn btn-primary">
+            開始遊戲
+          </button>
+        </div>
+      </div>
     </>
   )
 }

@@ -16,15 +16,6 @@ export default function LoginCustom() {
     <>
       <Section>
         <div className="custom-page">
-          <div className="lamp-pic">
-            <Image
-              src="/images/login/lamp.svg"
-              alt=""
-              className="lamp-obj"
-              width={166}
-              height={242}
-            />
-          </div>
           <div className="custom-login-group">
             <div className="login-pic col-7">
               <Image
@@ -35,8 +26,17 @@ export default function LoginCustom() {
                 height={933}
               />
             </div>
-            {/* <SearchBar /> */}
+
             <div className="custom-login-page col-5">
+              <div className="lamp-pic">
+                <Image
+                  src="/images/login/lamp.svg"
+                  alt=""
+                  className="lamp-obj"
+                  width={166}
+                  height={242}
+                />
+              </div>
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button
@@ -219,7 +219,7 @@ export default function LoginCustom() {
         {/* 以下是min版 */}
         <div className="custom-page-min">
           <div className="custom-min-group">
-          {/* 一般會員註冊 */}
+            {/* 一般會員註冊 */}
             {/* <div className="custom-min-register">
               <div className="login-title">
                 <span>一般會員註冊</span>
@@ -289,7 +289,7 @@ export default function LoginCustom() {
                 </button>
               </div>
             </div> */}
-          {/* 一般會員登入 */}
+            {/* 一般會員登入 */}
             <div className="custom-min-login">
               <div className="login-title">
                 <span>一般會員登入</span>

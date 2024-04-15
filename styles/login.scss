@@ -29,7 +29,7 @@ $gray: rgb(229, 225, 221);
     transform: translateX(-50%) translateY(-100%) rotate(0deg);
   }
 }
-.seller-page {
+.seller-login-page {
   position: relative;
   .lamp-pic {
     position: absolute;
@@ -46,13 +46,13 @@ $gray: rgb(229, 225, 221);
     }
   }
 }
-.custom-page {
+.custom-login-page {
   position: relative;
   .lamp-pic {
     position: absolute;
     width: 10px;
     top: 200px;
-    left: 82vw;
+    right: -10px;
     z-index: 1;
     .lamp-obj {
       transform: translateX(-50%) translateY(-100%);
@@ -100,7 +100,7 @@ $gray: rgb(229, 225, 221);
           height: 100%;
           border-radius: 0px;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 500;
         }
         .nav-link.active {
           background-color: $primary;
