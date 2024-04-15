@@ -13,19 +13,47 @@ import {
 export default function GamePlay() {
   return (
     <>
-      {/* <Section> */}
-      {/* <Image src="/images/layout/icons.png" alt="" width={500} height={500} /> */}
-      {/* <SearchBar />
-        <h1>在這裡放你切好的版,記得就是用兩個Section包住</h1> */}
-      <div className="game-play-page">
-        <div className="time-table col-3">AAA</div>
-        <div className="play-div col-9">AAA</div>
-        <div className="chara-group">
-          <div className="character"></div>
-          <div className="talk"></div>
+      <Section>
+        <div className="game-play-page">
+          <div className="game-main">
+            <div className="time-table">
+              <div className="level">第一關</div>
+              <div className="time-group">
+                <div className="time-text">剩餘時間</div>
+                <div className="game-seconds">01:00</div>
+              </div>
+              <div className="point-group">
+                <div className="point-text">距離破關分數剩</div>
+                <div className="game-point">1000</div>
+              </div>
+            </div>
+            <div className="play-div ">
+              <div className="balloon-play">
+                <img
+                  src="/images/game/ballon.png"
+                  className="balloon-obj"
+                  alt="..."
+                />
+                <img
+                  src="/images/game/ballon.png"
+                  className="balloon-obj"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div className="chara-group">
+            <div className="talk"></div>
+            <div className="character">
+              <img
+                src="/images/game/cha01.png"
+                classname="balloon-obj"
+                alt="..."
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      {/* </Section> */}
+      </Section>
     </>
   )
 }
