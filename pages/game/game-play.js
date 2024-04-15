@@ -43,11 +43,12 @@ export default function GamePlay() {
             </div>
           </div>
           <div className="chara-group">
-            <div className="talk"></div>
+            <div className="talk">AAAAAAAAAAAAAAAAAAA</div>
             <div className="character">
+              {' '}
               <img
                 src="/images/game/cha01.png"
-                classname="character-obj"
+                className="character-obj"
                 alt="..."
               />
             </div>
