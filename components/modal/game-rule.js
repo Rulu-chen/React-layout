@@ -36,7 +36,7 @@ export default function GameRule() {
               </div>
               <div className="modal-body">
                 {/* 規則開始 */}
-                <div className="level-text">第一關</div>
+                {/* <div className="level-text">第一關</div>
                 <div className="rule-group">
                   <div className="point-text">時間限制:60秒</div>
                   <div className="score-text">通關分數:1000</div>
@@ -47,7 +47,7 @@ export default function GameRule() {
                   data-bs-dismiss="modal"
                 >
                   挑戰開始
-                </button>
+                </button> */}
                 {/* 規則結束 */}
                 {/* 挑戰成功開始 */}
                 {/* <div className="level-text">第一關挑戰成功</div>
@@ -66,7 +66,7 @@ export default function GameRule() {
                 </div> */}
                 {/* 挑戰成功結束 */}
                 {/* 挑戰失敗開始 */}
-                {/* <div className="level-text">第一關挑戰失敗</div>
+                <div className="level-text">第一關挑戰失敗</div>
                 <FaRegWindowClose className="fa-fail" />
 
                 <div className="rule-group">
@@ -79,7 +79,7 @@ export default function GameRule() {
                   <button type="button" className="btn btn-primary">
                     再挑戰一次
                   </button>
-                </div> */}
+                </div>
                 {/* 挑戰失敗結束 */}
               </div>
             </div>

@@ -20,7 +20,7 @@ export default function GamePlay() {
     <>
       <div className="game-play-page">
         {/* <QrcodeCurrent /> */}
-        <GameRule />
+        {/* <GameRule /> */}
         {/* <div className="black-mode black-show"></div> */}
         <div className="game-main">
           <div className="time-table">
