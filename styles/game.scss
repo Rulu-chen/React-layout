@@ -11,6 +11,7 @@
     border-radius: 30px 30px 0px 0px;
     padding: 20px 20px 60px 20px;
     margin-top: 0px;
+    height: 78vh;
   }
   background-image: url(/images/game/game-start-bgc.png);
   background-size: cover;
@@ -84,29 +85,60 @@
 }
 
 // GamePlay頁面
-.section {
-  overflow: hidden;
-}
+// .section {
+//   overflow: hidden;
+// }
 .game-play-page {
+  @media (max-width: 992px) {
+    border: $primary solid 10px;
+    border-top: none;
+    border-radius: 30px 30px 0px 0px;
+    padding: 0px;
+    margin-top: 0px;
+    height: 91vh;
+  }
+  background: linear-gradient(
+      0deg,
+      rgba(225, 209, 178, 0.8) 0%,
+      rgba(225, 209, 178, 0.8) 100%
+    ),
+    url(../public/images/layout/bgc.jpg), lightgray 50%;
+  border-radius: 70px 70px 0px 0px;
+  border: $primary solid 20px;
+  padding: 80px 80px 150px 80px;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   position: relative;
+  border-top: none;
+  overflow: hidden;
+
   .black-mode.black-show {
     position: absolute;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    top: -80px;
-    left: -80px;
-  }
-  .chara-group {
-    position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
+  }
+  .chara-group {
+    @media (max-width: 992px) {
+      top: 0;
+      left: 0;
+    }
+    position: absolute;
+    top: -20px;
+    left: 60px;
     height: 100%;
     width: 100%;
+    z-index: 1;
 
     .character {
+      @media (max-width: 992px) {
+        bottom: 0;
+        left: 0;
+        height: 40%;
+      }
       position: absolute;
       bottom: -150px;
       left: 8%;
@@ -114,20 +146,30 @@
       width: 100%;
       overflow: hidden;
       .character-obj {
+        @media (max-width: 992px) {
+          width: 50%;
+        }
         width: 300px;
         transform: scaleX(-1);
         position: absolute;
       }
     }
     .talk-group {
+      @media (max-width: 992px) {
+        width: 130px;
+        height: 180px;
+        padding: 20px;
+        left: 58%;
+        top: 63%;
+      }
       overflow-wrap: break-word;
       overflow: visible;
       background: #fff;
       display: flex;
       width: 280px;
       height: 280px;
-      left: 8%;
-      top: 15%;
+      left: 9%;
+      top: 20%;
       padding: 40px;
       justify-content: center;
       align-items: center;
@@ -135,6 +177,12 @@
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5) inset;
       position: relative;
       .triangle {
+        @media (max-width: 992px) {
+          border-color: transparent #ffffff transparent transparent;
+          border-width: 25px;
+          top: 40%;
+          left: -30%;
+        }
         position: absolute;
         border-color: #ffffff transparent transparent transparent;
         border-style: solid solid solid solid;
@@ -145,6 +193,11 @@
         width: 0px;
       }
       .talk {
+        @media (max-width: 992px) {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.3rem;
+        }
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
@@ -155,13 +208,31 @@
 
   // 遊戲頁設定
   .game-main {
+    @media (max-width: 992px) {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     display: flex;
     align-items: start;
     justify-content: end;
     flex-direction: row;
     // gap: 100px;
+    position: relative;
     // 左側計數
     .time-table {
+      @media (max-width: 992px) {
+        gap: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: initial;
+        padding: 10px 0px 10px 0px;
+        background-color: #fff;
+      }
       display: flex;
       height: 50%;
       width: 320px;
@@ -174,11 +245,38 @@
       margin-right: auto;
       background: rgba(255, 255, 255, 0.5);
       .level {
+        @media (max-width: 992px) {
+          font-size: 30px;
+          font-weight: 700;
+          width: 100%;
+          border-bottom: 1px dotted $primary;
+          text-align: center;
+          padding-bottom: 10px;
+        }
         color: $primary;
         font-size: 40px;
         font-weight: 700;
       }
+      // 小版用的計分排版
+      .table-bottom {
+        @media (max-width: 992px) {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          justify-content: center;
+          padding-top: 10px;
+        }
+      }
       .time-group {
+        @media (max-width: 992px) {
+          width: 100%;
+          padding: 0;
+          border-radius: 0px;
+          box-shadow: none;
+          background-color: transparent;
+        }
         padding: 10px 0px 10px 0px;
         width: 100%;
         display: flex;
@@ -190,11 +288,19 @@
         background: #fff;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5) inset;
         .time-text {
+          @media (max-width: 992px) {
+            font-size: 20px;
+            font-weight: 700;
+          }
           color: #621b1b;
           font-size: 30px;
           font-weight: 700;
         }
         .game-seconds {
+          @media (max-width: 992px) {
+            font-size: 28px;
+            font-weight: 700;
+          }
           color: $primary;
           font-size: 40px;
           font-weight: 700;
@@ -202,18 +308,30 @@
         }
       }
       .point-group {
+        @media (max-width: 992px) {
+          margin-top: 0;
+        }
         display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-shrink: 0;
+        margin-top: 20px;
+        // flex-shrink: 0;
         .point-text {
+          @media (max-width: 992px) {
+            font-size: 20px;
+            font-weight: 700;
+          }
           color: #621b1b;
           font-size: 26px;
           font-weight: 700;
         }
         .game-point {
+          @media (max-width: 992px) {
+            font-size: 28px;
+            font-weight: 700;
+          }
           color: $primary;
           font-size: 40px;
           font-weight: 700;
@@ -222,6 +340,15 @@
     }
     // 遊戲欄
     .play-div {
+      @media (max-width: 992px) {
+        //  background-image: url(/images/game/game-bgc2-min.png);
+        background-image: url(/images/game/game-main-min.png);
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        padding: 155px 10px 80px 10px;
+      }
       // background-image: url(/images/game/game-bgc2.png);
       background-image: url(/images/game/game-main.png);
       background-size: cover;
@@ -240,8 +367,12 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        border: #621b1b 1px solid;
+        // 圈出氣球出現的範圍用
+        // border: #621b1b 1px solid;
         .balloon-obj {
+          @media (max-width: 992px) {
+            width: 60px;
+          }
           width: 100px;
           display: none;
         }

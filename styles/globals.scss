@@ -3,7 +3,7 @@
 
 // // 全站配色 colors
 // 引入變數使用
-@import "variable";
+@import 'variable';
 
 // ↑↑↑  變數覆蓋(Variable overrides) 要寫在這行"上面"  ↑↑↑
 // 導入所有 bootstrap 樣式
@@ -178,8 +178,8 @@ body {
       padding-bottom: 0px;
       border-radius: 0px;
       // border 手機版有奇怪的破圖才設的 沒效果可拿掉
-      // border-right: 2px solid $primary;
-      // border-left: 2px solid $primary;
+      border-right: 2px solid $primary;
+      border-left: 2px solid $primary;
     }
     align-self: stretch;
     padding-left: 20px;
@@ -514,7 +514,6 @@ body {
       //   border-radius: 70px 70px 0px 0px;
       //   background-color: $secondary;
       // }
-
       // 優惠輪播欄
       .simple-news {
         @media (max-width: 992px) {
@@ -656,7 +655,7 @@ body {
       position: relative;
       // height: 50vh;
       align-self: stretch;
-      z-index: 0;
+      z-index: 1;
       @media (max-width: 992px) {
         // border 手機版有奇怪的破圖才設的 或許可拿掉
         border-right: 12px solid $primary;

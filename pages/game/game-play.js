@@ -11,54 +11,61 @@ import {
 } from 'react-icons/fa'
 
 export default function GamePlay() {
+  const divStyle = {
+    padding: '0px',
+  }
   return (
     <>
-      <Section>
-        <div className="game-play-page">
-          <div className="black-mode black-show"></div>
-          <div className="game-main">
-            <div className="time-table">
-              <div className="level">第一關</div>
+      <div className="game-play-page">
+        <div className="black-mode black-show"></div>
+        <div className="game-main">
+          <div className="time-table">
+            <div className="level">第一關</div>
+            <div className="table-bottom">
               <div className="time-group">
                 <div className="time-text">剩餘時間</div>
                 <div className="game-seconds">01:00</div>
               </div>
               <div className="point-group">
-                <div className="point-text">距離破關分數剩</div>
+                <div className="point-text">剩餘分數</div>
                 <div className="game-point">1000</div>
               </div>
             </div>
-            <div className="play-div ">
-              <div className="balloon-play">
-                <img
-                  src="/images/game/ballon.png"
-                  className="balloon-obj"
-                  alt="..."
-                />
-                <img
-                  src="/images/game/ballon.png"
-                  className="balloon-obj"
-                  alt="..."
-                />
-              </div>
-            </div>
           </div>
-          <div className="chara-group">
-            <div className="talk-group">
-              <div class="triangle"></div>
-              <div className="talk">呼～總算把這些氣球全部射下來了！雖然只是從遙遠的垃圾變成近一點的垃圾......</div>
-            </div>
-            <div className="character">
-              {' '}
+          <div className="play-div ">
+            <div className="balloon-play">
               <img
-                src="/images/game/cha01.png"
-                className="character-obj"
+                src="/images/game/ballon.png"
+                className="balloon-obj"
+                alt="..."
+              />
+              <img
+                src="/images/game/ballon.png"
+                className="balloon-obj"
                 alt="..."
               />
             </div>
           </div>
         </div>
-      </Section>
+        <div className="chara-group">
+          <div className="talk-group">
+            <div class="triangle"></div>
+            <div className="talk">
+              呼～總算把這些氣球全部射下來了！
+              <br />
+              雖然只是從遙遠的垃圾變成近一點的垃圾......
+            </div>
+          </div>
+          <div className="character">
+            {' '}
+            <img
+              src="/images/game/cha01.png"
+              className="character-obj"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
     </>
   )
 }
