@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaSistrix } from 'react-icons/fa'
 
-export default function SearchBar() {
+export default function SearchBarIndex() {
   return (
     <>
       <div className="search-item">
