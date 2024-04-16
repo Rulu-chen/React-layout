@@ -9,6 +9,8 @@ import {
   FaAngleLeft,
   FaAngleRight,
 } from 'react-icons/fa'
+import QrcodeCurrent from '@/components/modal/qrcodeCurrent'
+import GameRule from '@/components/modal/game-rule'
 
 export default function GamePlay() {
   const divStyle = {
@@ -17,7 +19,9 @@ export default function GamePlay() {
   return (
     <>
       <div className="game-play-page">
-        <div className="black-mode black-show"></div>
+        {/* <QrcodeCurrent /> */}
+        <GameRule />
+        {/* <div className="black-mode black-show"></div> */}
         <div className="game-main">
           <div className="time-table">
             <div className="level">第一關</div>
@@ -47,7 +51,8 @@ export default function GamePlay() {
             </div>
           </div>
         </div>
-        <div className="chara-group">
+        
+        {/* <div className="chara-group">
           <div className="talk-group">
             <div class="triangle"></div>
             <div className="talk">
@@ -64,7 +69,7 @@ export default function GamePlay() {
               alt="..."
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
