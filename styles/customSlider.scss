@@ -1,4 +1,5 @@
-@import "variable";
+// 引入變數使用
+@import 'variable';
 
 // /* customSlider.css */
 .discount {
@@ -13,19 +14,19 @@
   }
   .slider-container {
     position: relative;
-    width: 100%; /* 根据你的需求设置宽度 */
-    height: 100%; /* 根据你的需求设置高度 */
-    transform: rotate(-45deg); /* 将整个轮播容器倾斜45度 */
-    margin: 0 auto; /* 设置左右外边距为auto，使轮播容器水平居中 */
+    width: 100%; /* 根據你的需求設置寬度 */
+    height: 100%; /* 根據你的需求設定高度 */
+    transform: rotate(-45deg); /* 將整個輪播容器傾斜45度 */
+    margin: 0 auto; /* 設定左右外邊距為auto，使輪播容器水平居中 */
     align-self: stretch;
 
     //   padding-top: 25%;
   }
 
   .slick-slide {
-    transform: rotate(45deg); /* 将轮播项旋转 -45 度 */
-    width: 200px; /* 调整轮播项的宽度 */
-    height: 200px; /* 调整轮播项的高度 */
+    transform: rotate(45deg); /* 將輪播項旋轉 -45 度 */
+    width: 200px; /* 調整輪播項的寬度 */
+    height: 200px; /* 調整輪播項的高度 */
     transform-origin: center center;
   }
 
@@ -34,9 +35,9 @@
 
     img {
       //   border: 1px solid #000;
-      width: 100%; /* 让图片填充整个容器 */
-      height: 100%; /* 让图片填充整个容器 */
-      object-fit: cover; /* 避免图片被裁切 */
+      width: 100%; /* 讓圖片填滿整個容器 */
+      height: 100%; /* 讓圖片填滿整個容器 */
+      object-fit: cover; /* 避免圖片被裁切 */
     }
   }
 }
